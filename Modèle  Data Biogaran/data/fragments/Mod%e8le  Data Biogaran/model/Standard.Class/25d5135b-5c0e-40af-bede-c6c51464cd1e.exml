@@ -1,0 +1,466 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CSKT" version="4">
+  <OBJECT>
+    <ID name="CSKT" mc="Standard.Class" uid="25d5135b-5c0e-40af-bede-c6c51464cd1e"/>
+    <PID name="accounting" mc="Standard.Package" uid="bc739053-4a69-44c6-a74b-4b63f6064351"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[CSKT]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="MANDT" mc="Standard.Attribute" uid="3ab5a63e-8711-49e4-bea0-2226c2a0b4f8"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[MANDT]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <ID name="LanguageSAPTechnical" mc="Infrastructure.Stereotype" uid="5529325f-303f-4cf8-8efe-f9ff049e0d00"/>
+              <ID name="LanguageSAPFunctional" mc="Infrastructure.Stereotype" uid="95756714-690a-4b58-831b-976f5eb298e6"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="5529325f-303f-4cf8-8efe-f9ff049e0d00" mc="Infrastructure.TypedPropertyTable" uid="0e26cb54-3dfb-44e6-bccc-2f6fd117c746"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[5529325f-303f-4cf8-8efe-f9ff049e0d00]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Apr 24 09:50:46 CEST 2025
+Description=
+Name=MANDT
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="edd88cab-6b9d-4b2d-9deb-3941709be3c2"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="95756714-690a-4b58-831b-976f5eb298e6" mc="Infrastructure.TypedPropertyTable" uid="2eed9ace-0b2a-49fa-82a2-4457895a84a0"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[95756714-690a-4b58-831b-976f5eb298e6]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Apr 24 09:50:46 CEST 2025
+Description=
+Name=Client
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="d247bcda-7193-4b52-a88c-018a4b15a514"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="eaebbd2a-bef3-4193-9c9e-7aee0f5897ce"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Client]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="KOKRS" mc="Standard.Attribute" uid="abcafd12-b7df-42a0-ab00-b7115c07355c"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[KOKRS]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <ID name="LanguageSAPTechnical" mc="Infrastructure.Stereotype" uid="5529325f-303f-4cf8-8efe-f9ff049e0d00"/>
+              <ID name="LanguageSAPFunctional" mc="Infrastructure.Stereotype" uid="95756714-690a-4b58-831b-976f5eb298e6"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="5529325f-303f-4cf8-8efe-f9ff049e0d00" mc="Infrastructure.TypedPropertyTable" uid="52576110-d471-4d1f-b436-e075984118ba"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[5529325f-303f-4cf8-8efe-f9ff049e0d00]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Apr 24 09:50:46 CEST 2025
+Description=
+Name=KOKRS
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="edd88cab-6b9d-4b2d-9deb-3941709be3c2"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="95756714-690a-4b58-831b-976f5eb298e6" mc="Infrastructure.TypedPropertyTable" uid="7987e7d2-d2be-44bb-a210-f48bbc1ee427"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[95756714-690a-4b58-831b-976f5eb298e6]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Apr 24 09:50:46 CEST 2025
+Description=
+Name=COArea
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="d247bcda-7193-4b52-a88c-018a4b15a514"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="49366d7a-8ea0-4de6-b06e-cde5cd39bf1e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[CO Area]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="KOSTL" mc="Standard.Attribute" uid="47adec5e-ca16-49d3-8395-9c6c4242d6bf"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[KOSTL]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <ID name="LanguageSAPTechnical" mc="Infrastructure.Stereotype" uid="5529325f-303f-4cf8-8efe-f9ff049e0d00"/>
+              <ID name="LanguageSAPFunctional" mc="Infrastructure.Stereotype" uid="95756714-690a-4b58-831b-976f5eb298e6"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="5529325f-303f-4cf8-8efe-f9ff049e0d00" mc="Infrastructure.TypedPropertyTable" uid="0e49d5ed-06be-4d96-8624-486987b1958d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[5529325f-303f-4cf8-8efe-f9ff049e0d00]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Apr 24 09:50:46 CEST 2025
+Description=
+Name=KOSTL
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="edd88cab-6b9d-4b2d-9deb-3941709be3c2"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="95756714-690a-4b58-831b-976f5eb298e6" mc="Infrastructure.TypedPropertyTable" uid="fff1fde1-51e3-44d0-b610-3bdfdbc57c15"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[95756714-690a-4b58-831b-976f5eb298e6]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Apr 24 09:50:46 CEST 2025
+Description=
+Name=CostCenter
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="d247bcda-7193-4b52-a88c-018a4b15a514"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="46f9a017-a028-4b6b-b5a2-7223090e76b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Cost Center]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="LTEXT_E" mc="Standard.Attribute" uid="b6e49072-d511-4335-9a57-98344e39a0dc"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[LTEXT_E]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <ID name="LanguageSAPTechnical" mc="Infrastructure.Stereotype" uid="5529325f-303f-4cf8-8efe-f9ff049e0d00"/>
+              <ID name="LanguageSAPFunctional" mc="Infrastructure.Stereotype" uid="95756714-690a-4b58-831b-976f5eb298e6"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="5529325f-303f-4cf8-8efe-f9ff049e0d00" mc="Infrastructure.TypedPropertyTable" uid="bfd7b23c-ee58-49c5-b9ae-d28276c7496e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[5529325f-303f-4cf8-8efe-f9ff049e0d00]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Apr 24 09:50:46 CEST 2025
+Description=
+Name=LTEXT_E
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="edd88cab-6b9d-4b2d-9deb-3941709be3c2"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="95756714-690a-4b58-831b-976f5eb298e6" mc="Infrastructure.TypedPropertyTable" uid="633c9806-cf1a-4faa-b6d6-b4d827c6ac91"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[95756714-690a-4b58-831b-976f5eb298e6]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Apr 24 09:50:46 CEST 2025
+Description=
+Name=DescriptionInEnglish
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="d247bcda-7193-4b52-a88c-018a4b15a514"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="4a1b5a50-a2b9-45ca-9e1a-f213fab4ed52"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Description in english]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="LTEXT_F" mc="Standard.Attribute" uid="c4d2fb03-deaa-44ee-adf1-7ef25e030d84"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[LTEXT_F]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <ID name="LanguageSAPTechnical" mc="Infrastructure.Stereotype" uid="5529325f-303f-4cf8-8efe-f9ff049e0d00"/>
+              <ID name="LanguageSAPFunctional" mc="Infrastructure.Stereotype" uid="95756714-690a-4b58-831b-976f5eb298e6"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="5529325f-303f-4cf8-8efe-f9ff049e0d00" mc="Infrastructure.TypedPropertyTable" uid="c8df5684-ae0b-4630-921b-689c23173c48"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[5529325f-303f-4cf8-8efe-f9ff049e0d00]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Apr 24 09:50:46 CEST 2025
+Description=
+Name=LTEXT_F
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="edd88cab-6b9d-4b2d-9deb-3941709be3c2"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="95756714-690a-4b58-831b-976f5eb298e6" mc="Infrastructure.TypedPropertyTable" uid="9c4833c5-8d3f-449d-a681-dc5435fcf872"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[95756714-690a-4b58-831b-976f5eb298e6]]></ATT>
+                  <ATT name="Content"><![CDATA[#Thu Apr 24 09:50:46 CEST 2025
+Description=
+Name=DescriptionInFrench
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="d247bcda-7193-4b52-a88c-018a4b15a514"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="4df6fa45-f9fe-4b0d-ac69-03e780a176f9"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Description]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="LanguageSAPTechnical" mc="Infrastructure.Stereotype" uid="5529325f-303f-4cf8-8efe-f9ff049e0d00"/>
+        <ID name="LanguageSAPFunctional" mc="Infrastructure.Stereotype" uid="95756714-690a-4b58-831b-976f5eb298e6"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="5529325f-303f-4cf8-8efe-f9ff049e0d00" mc="Infrastructure.TypedPropertyTable" uid="ce9b4a44-7acd-4544-94e8-bc790014c9c4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[5529325f-303f-4cf8-8efe-f9ff049e0d00]]></ATT>
+            <ATT name="Content"><![CDATA[#Thu Apr 24 09:50:44 CEST 2025
+Description=
+Name=CSKT
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="edd88cab-6b9d-4b2d-9deb-3941709be3c2"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="95756714-690a-4b58-831b-976f5eb298e6" mc="Infrastructure.TypedPropertyTable" uid="fc253791-237a-435a-bcba-c3ba6b5358b9"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[95756714-690a-4b58-831b-976f5eb298e6]]></ATT>
+            <ATT name="Content"><![CDATA[#Thu Apr 24 09:50:44 CEST 2025
+Description=
+Name=CostCenterTexts
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="d247bcda-7193-4b52-a88c-018a4b15a514"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="ff988ac6-ae5f-44f7-86a6-f286c263e21f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Cost Center Texts]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

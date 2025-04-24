@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="datamodel" version="4">
+  <OBJECT>
+    <ID name="datamodel" mc="Standard.Package" uid="8078ea91-ac9c-4561-b72e-5659e8251d27"/>
+    <PID name="biogaran" mc="Standard.Package" uid="a6d05394-4ccb-4035-b4ae-31038ec2c0ca"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[datamodel]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="produit" mc="Standard.Package" uid="588d8cf2-e784-4ae5-8c35-4c5a7f639cf0"/>
+        <COMPID name="supply" mc="Standard.Package" uid="fba251c3-aae2-486f-a215-ecdf54282fd5"/>
+        <COMPID name="client" mc="Standard.Package" uid="424e0a81-5695-4973-9dbc-a88e3a26728c"/>
+        <COMPID name="finance" mc="Standard.Package" uid="76f78b66-f8a6-4951-973b-56190b9548f3"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="CartographyManagerRootOfTheModel" mc="Infrastructure.Stereotype" uid="6a39137e-8d53-4358-8a20-41bdf91c9218"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="6a39137e-8d53-4358-8a20-41bdf91c9218" mc="Infrastructure.TypedPropertyTable" uid="31f74a9a-4edc-4153-8042-282efe0ee0ee"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[6a39137e-8d53-4358-8a20-41bdf91c9218]]></ATT>
+            <ATT name="Content"><![CDATA[#Tue Apr 22 13:51:08 CEST 2025
+isRootOfTheModel=true
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="a62954af-2503-49e6-a1c9-876db56c44d4"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="accounting" version="4">
+  <OBJECT>
+    <ID name="accounting" mc="Standard.Package" uid="bc739053-4a69-44c6-a74b-4b63f6064351"/>
+    <PID name="finance" mc="Standard.Package" uid="76f78b66-f8a6-4951-973b-56190b9548f3"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[accounting]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="BKPF" mc="Standard.Class" uid="5eb6a3ca-5ed3-4bfb-867d-aac87f3a9059"/>
+        <COMPID name="BSEG" mc="Standard.Class" uid="ca27342e-db99-4a24-814f-37b0ef661e41"/>
+        <COMPID name="T001" mc="Standard.Class" uid="e9f396f7-af58-4e58-8295-438ec220f8ea"/>
+        <COMPID name="LFA1" mc="Standard.Class" uid="a1758ce0-e955-4d08-8511-fdf1537b8b68"/>
+        <COMPID name="CSKS" mc="Standard.Class" uid="8d8336f4-95e1-47f0-909c-06e09aaf7dd9"/>
+        <COMPID name="ZTAXACHAT" mc="Standard.Class" uid="f6346453-28c6-4895-9c63-619243216891"/>
+        <COMPID name="EKKN" mc="Standard.Class" uid="71872a27-3911-4317-a084-1ef611de15bd"/>
+        <COMPID name="EKPO" mc="Standard.Class" uid="1ce6aa2e-efbf-4ab5-8647-fd74228612e1"/>
+        <COMPID name="TCURR" mc="Standard.Class" uid="68e35638-cafb-4ee8-804b-4092971005f1"/>
+        <COMPID name="CSKT" mc="Standard.Class" uid="25d5135b-5c0e-40af-bede-c6c51464cd1e"/>
+        <COMPID name="T005T" mc="Standard.Class" uid="e30f4777-0f83-462f-a3db-66cbcbb89be5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

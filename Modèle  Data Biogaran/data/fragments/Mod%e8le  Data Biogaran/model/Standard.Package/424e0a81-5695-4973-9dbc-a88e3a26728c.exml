@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="client" version="4">
+  <OBJECT>
+    <ID name="client" mc="Standard.Package" uid="424e0a81-5695-4973-9dbc-a88e3a26728c"/>
+    <PID name="datamodel" mc="Standard.Package" uid="8078ea91-ac9c-4561-b72e-5659e8251d27"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[client]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ContratClient" mc="Standard.Class" uid="02e7db49-eb32-4e93-bec9-b21a819478f3"/>
+        <COMPID name="Client" mc="Standard.Class" uid="f048ede6-de70-4492-8af8-2f3e0be464bb"/>
+        <COMPID name="CommandeClient" mc="Standard.Class" uid="1038ea2f-0d31-4f96-b40b-740273183c33"/>
+        <COMPID name="TypeClient" mc="Standard.Class" uid="b6ebe631-0acb-43d5-b32d-10c916857be2"/>
+        <COMPID name="ConditionPaiement" mc="Standard.Class" uid="6218f63c-2d89-48e6-a9d6-c029489c9b95"/>
+        <COMPID name="MethodePaiement" mc="Standard.Class" uid="bd16bd4e-31c2-4f3a-9987-e10ae0520601"/>
+        <COMPID name="Officine" mc="Standard.Class" uid="9e6dc0de-ba51-4d6f-b374-5a958d1e70dd"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

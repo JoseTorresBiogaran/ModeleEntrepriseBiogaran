@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="fr" version="4">
+  <OBJECT>
+    <ID name="fr" mc="Standard.Package" uid="3069734f-8748-4fa0-9c57-9ac927748e6d"/>
+    <PID name="root" mc="Standard.Package" uid="c25928ab-beee-49b0-ae65-09e3ad347dfa"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[fr]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="biogaran" mc="Standard.Package" uid="a6d05394-4ccb-4035-b4ae-31038ec2c0ca"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

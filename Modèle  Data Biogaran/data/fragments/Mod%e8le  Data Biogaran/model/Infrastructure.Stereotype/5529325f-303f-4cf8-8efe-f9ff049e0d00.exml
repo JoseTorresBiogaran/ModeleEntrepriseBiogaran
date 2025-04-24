@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LanguageSAPTechnical" version="4">
+  <OBJECT>
+    <ID name="LanguageSAPTechnical" mc="Infrastructure.Stereotype" uid="5529325f-303f-4cf8-8efe-f9ff049e0d00"/>
+    <PID name="LocalProfile" mc="Infrastructure.Profile" uid="2588026a-7eef-475d-8272-424a01b5a12f"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[LanguageSAPTechnical]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Infrastructure.ModelElement]]></ATT>
+      <ATT name="Name"><![CDATA[LanguageSAPTechnical]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTable">
+        <COMPID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="edd88cab-6b9d-4b2d-9deb-3941709be3c2"/>
+      </COMP>
+      <LINK relation="Parent">
+        <FOREIGNID name="CartographyManagerTranslation" mc="Infrastructure.Stereotype" uid="26EE79C3-B9DB-4D36-BB23-E4AC8D3D851C"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

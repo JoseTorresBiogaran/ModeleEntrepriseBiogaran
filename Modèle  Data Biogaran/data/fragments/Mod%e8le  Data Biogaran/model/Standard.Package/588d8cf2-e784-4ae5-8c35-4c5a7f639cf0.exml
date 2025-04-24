@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="produit" version="4">
+  <OBJECT>
+    <ID name="produit" mc="Standard.Package" uid="588d8cf2-e784-4ae5-8c35-4c5a7f639cf0"/>
+    <PID name="datamodel" mc="Standard.Package" uid="8078ea91-ac9c-4561-b72e-5659e8251d27"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[produit]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Produit" mc="Standard.Class" uid="41b6855e-8a93-4ba6-abb8-c0c302eb1e97"/>
+        <COMPID name="FamilleProduit" mc="Standard.Class" uid="81878563-5bab-4f00-b48b-1be1f6a2bcec"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

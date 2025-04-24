@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ConditionPaiement" version="4">
+  <OBJECT>
+    <ID name="ConditionPaiement" mc="Standard.Class" uid="6218f63c-2d89-48e6-a9d6-c029489c9b95"/>
+    <PID name="client" mc="Standard.Package" uid="424e0a81-5695-4973-9dbc-a88e3a26728c"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ConditionPaiement]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="fa6522f3-9475-4f97-97f5-937395817ada"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Les conditions de reglement des factures par les clients parmi les valeurs:
+1	60JDAD	60 jours date à date
+2	null	null
+3	30JDAD	30 jours date à date
+4	COMPT	Comptant
+5	10JDAD	10 jours fin de mois
+6	60JFDM	60 jours fin de mois
+7	120JDAD	120 jours date à date
+8	45JDAD	45 jours date à date
+9	45JFDM	45 jours fin de mois
+10	30JFDM	30 jours fin de mois
+11	10JFDM	10 jours date à date
+12	120JFDM	120 jours fin de mois]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,530 @@
+{
+    "classes" : [ {
+        "name" : "BKPF",
+        "description" : "Accounting Document Header",
+        "domain" : "finance.accounting",
+        "attributes" : [ {
+            "name" : "AEDAT",
+            "type" : "Date",
+            "description" : "Changed on"
+        }, {
+            "name" : "BELNR",
+            "type" : "String",
+            "description" : "Document Number"
+        }, {
+            "name" : "BLART",
+            "type" : "String",
+            "description" : "Document type"
+        }, {
+            "name" : "BUDAT",
+            "type" : "Date",
+            "description" : "Posting Date"
+        }, {
+            "name" : "BUKRS",
+            "type" : "String",
+            "description" : "Company Code"
+        }, {
+            "name" : "CPUDT",
+            "type" : "Date",
+            "description" : "Entered on"
+        }, {
+            "name" : "GJAHR",
+            "type" : "String",
+            "description" : "Fiscal Year"
+        }, {
+            "name" : "GJAHR_MONAT",
+            "type" : "String",
+            "description" : "Fiscal Year and Period"
+        }, {
+            "name" : "MANDT",
+            "type" : "String",
+            "description" : "Client"
+        }, {
+            "name" : "MONAT",
+            "type" : "String",
+            "description" : "Period"
+        }, {
+            "name" : "PO_NPO",
+            "type" : "String",
+            "description" : "PO/NPO"
+        }, {
+            "name" : "PerimeterSpend",
+            "type" : "String",
+            "description" : ""
+        }, {
+            "name" : "PerimeterAccounting",
+            "type" : "String",
+            "description" : ""
+        }, {
+            "name" : "Spend_Analysis_Bcase",
+            "type" : "String",
+            "description" : "Spend Analysis Business Case detail"
+        }, {
+            "name" : "Spend_Analysis_Filter",
+            "type" : "String",
+            "description" : "Spend Analysis Selection"
+        }, {
+            "name" : "XBLNR",
+            "type" : "String",
+            "description" : "Reference"
+        } ]
+    }, {
+        "name" : "BSEG",
+        "description" : "Accounting Document Segment",
+        "domain" : "finance.accounting",
+        "relations" : [ {
+            "name" : "header",
+            "description" : "",
+            "target" : "BKPF",
+            "cardinality" : "ManyToOne"
+        }, {
+            "name" : "company",
+            "description" : "",
+            "target" : {
+                "name" : "T001",
+                "description" : "Company Codes",
+                "domain" : "finance.accounting",
+                "relations" : [ {
+                    "name" : "country",
+                    "description" : "",
+                    "target" : {
+                        "name" : "T005T",
+                        "description" : "Country Names",
+                        "domain" : "finance.accounting",
+                        "attributes" : [ {
+                            "name" : "LAND1",
+                            "type" : "String",
+                            "description" : "Country"
+                        }, {
+                            "name" : "LANDX_E",
+                            "type" : "String",
+                            "description" : "Name in English"
+                        }, {
+                            "name" : "LANDX_F",
+                            "type" : "String",
+                            "description" : "Name in French"
+                        }, {
+                            "name" : "MANDT",
+                            "type" : "String",
+                            "description" : "Client"
+                        } ]
+                    },
+                    "cardinality" : "ManyToOne"
+                } ],
+                "attributes" : [ {
+                    "name" : "BUKRS",
+                    "type" : "String",
+                    "description" : "Company Code"
+                }, {
+                    "name" : "BUTXT",
+                    "type" : "String",
+                    "description" : "Company Name"
+                }, {
+                    "name" : "LAND1",
+                    "type" : "String",
+                    "description" : "Country"
+                }, {
+                    "name" : "MANDT",
+                    "type" : "String",
+                    "description" : "Client"
+                } ]
+            },
+            "cardinality" : "ManyToOne"
+        }, {
+            "name" : "supplier",
+            "description" : "",
+            "target" : {
+                "name" : "LFA1",
+                "description" : "Vendor Master (General Section)",
+                "domain" : "finance.accounting",
+                "relations" : [ {
+                    "name" : "taxonomy",
+                    "description" : "",
+                    "target" : {
+                        "name" : "ZTAXACHAT",
+                        "description" : "Purchase taxonomy",
+                        "domain" : "finance.accounting",
+                        "relations" : [ {
+                            "name" : "parent",
+                            "description" : "",
+                            "target" : "ZTAXACHAT",
+                            "cardinality" : "OneToOne"
+                        } ],
+                        "attributes" : [ {
+                            "name" : "MANDT",
+                            "type" : "String",
+                            "description" : "Client"
+                        }, {
+                            "name" : "ZTAXACH",
+                            "type" : "String",
+                            "description" : "Purchase taxonomy"
+                        }, {
+                            "name" : "VTEXT_E",
+                            "type" : "String",
+                            "description" : "Description in english"
+                        }, {
+                            "name" : "VTEXT_F",
+                            "type" : "String",
+                            "description" : "Description in french"
+                        } ]
+                    },
+                    "cardinality" : "ManyToOne"
+                } ],
+                "attributes" : [ {
+                    "name" : "KRAUS",
+                    "type" : "String",
+                    "description" : "Cred.info no."
+                }, {
+                    "name" : "LAND1",
+                    "type" : "String",
+                    "description" : "Country"
+                }, {
+                    "name" : "LIFNR",
+                    "type" : "String",
+                    "description" : "Vendor"
+                }, {
+                    "name" : "MANDT",
+                    "type" : "String",
+                    "description" : "Client"
+                }, {
+                    "name" : "NAME1",
+                    "type" : "String",
+                    "description" : "Name"
+                }, {
+                    "name" : "NAME2",
+                    "type" : "String",
+                    "description" : "Name 2"
+                }, {
+                    "name" : "NAME3",
+                    "type" : "String",
+                    "description" : "Name 3"
+                }, {
+                    "name" : "NAME4",
+                    "type" : "String",
+                    "description" : "Name 4"
+                }, {
+                    "name" : "ORT01",
+                    "type" : "String",
+                    "description" : "City"
+                }, {
+                    "name" : "PSTLZ",
+                    "type" : "String",
+                    "description" : "Postal Code"
+                }, {
+                    "name" : "STCD1",
+                    "type" : "String",
+                    "description" : "Tax Number 1"
+                }, {
+                    "name" : "STCD2",
+                    "type" : "String",
+                    "description" : "Tax Number 2"
+                }, {
+                    "name" : "STCD3",
+                    "type" : "String",
+                    "description" : "Tax Number 3"
+                }, {
+                    "name" : "STCD4",
+                    "type" : "String",
+                    "description" : "Tax Number 4"
+                }, {
+                    "name" : "STCD5",
+                    "type" : "String",
+                    "description" : "Tax Number 5"
+                }, {
+                    "name" : "STCEG",
+                    "type" : "String",
+                    "description" : "VAT Reg. No."
+                }, {
+                    "name" : "STRAS",
+                    "type" : "String",
+                    "description" : "Street"
+                }, {
+                    "name" : "ZKTOKKS4",
+                    "type" : "String",
+                    "description" : "Target Account Group"
+                }, {
+                    "name" : "ZTAXACH",
+                    "type" : "String",
+                    "description" : "Purchase taxonomy"
+                } ]
+            },
+            "cardinality" : "ManyToOne"
+        }, {
+            "name" : "costCenter",
+            "description" : "",
+            "target" : {
+                "name" : "CSKS",
+                "description" : "Cost Center Master Record",
+                "domain" : "finance.accounting",
+                "relations" : [ {
+                    "name" : "costCenterLabel",
+                    "description" : "",
+                    "target" : {
+                        "name" : "CSKT",
+                        "description" : "Cost Center Texts",
+                        "domain" : "finance.accounting",
+                        "attributes" : [ {
+                            "name" : "MANDT",
+                            "type" : "String",
+                            "description" : "Client"
+                        }, {
+                            "name" : "KOKRS",
+                            "type" : "String",
+                            "description" : "CO Area"
+                        }, {
+                            "name" : "KOSTL",
+                            "type" : "String",
+                            "description" : "Cost Center"
+                        }, {
+                            "name" : "LTEXT_E",
+                            "type" : "String",
+                            "description" : "Description in english"
+                        }, {
+                            "name" : "LTEXT_F",
+                            "type" : "String",
+                            "description" : "Description"
+                        } ]
+                    },
+                    "cardinality" : "ManyToOne"
+                } ],
+                "attributes" : [ {
+                    "name" : "KOKRS",
+                    "type" : "String",
+                    "description" : "CO Area"
+                }, {
+                    "name" : "KOSTL",
+                    "type" : "String",
+                    "description" : "Cost Center"
+                }, {
+                    "name" : "MANDT",
+                    "type" : "String",
+                    "description" : "Client"
+                }, {
+                    "name" : "NAME1",
+                    "type" : "String",
+                    "description" : "Name"
+                } ]
+            },
+            "cardinality" : "ManyToOne"
+        }, {
+            "name" : "taxonomyBill",
+            "description" : "",
+            "target" : "ZTAXACHAT",
+            "cardinality" : "ManyToOne"
+        }, {
+            "name" : "accountAssignment",
+            "description" : "",
+            "target" : {
+                "name" : "EKKN",
+                "description" : "Account Assignment in Purchasing Document",
+                "domain" : "finance.accounting",
+                "attributes" : [ {
+                    "name" : "EBELN",
+                    "type" : "String",
+                    "description" : "Purchasing Doc."
+                }, {
+                    "name" : "EBELP",
+                    "type" : "String",
+                    "description" : "Item"
+                }, {
+                    "name" : "KOKRS",
+                    "type" : "String",
+                    "description" : "CO Area"
+                }, {
+                    "name" : "KOSTL",
+                    "type" : "String",
+                    "description" : "Cost Center"
+                }, {
+                    "name" : "MANDT",
+                    "type" : "String",
+                    "description" : "Client"
+                }, {
+                    "name" : "ZEKKN",
+                    "type" : "String",
+                    "description" : "Seq.No.Acc.Ass."
+                } ]
+            },
+            "cardinality" : "ManyToOne"
+        }, {
+            "name" : "documentItem",
+            "description" : "",
+            "target" : {
+                "name" : "EKPO",
+                "description" : "Purchasing Document Item",
+                "domain" : "finance.accounting",
+                "attributes" : [ {
+                    "name" : "EBELN",
+                    "type" : "String",
+                    "description" : "Purchasing Doc."
+                }, {
+                    "name" : "EBELP",
+                    "type" : "String",
+                    "description" : "Item"
+                }, {
+                    "name" : "KNTTP",
+                    "type" : "String",
+                    "description" : "Acct Assgmt Cat"
+                }, {
+                    "name" : "MANDT",
+                    "type" : "String",
+                    "description" : "Client"
+                }, {
+                    "name" : "MATKL",
+                    "type" : "String",
+                    "description" : "Material Group"
+                } ]
+            },
+            "cardinality" : "ManyToOne"
+        }, {
+            "name" : "currency",
+            "target" : {
+                "name" : "TCURR",
+                "description" : "Exchange Rates",
+                "domain" : "finance.accounting",
+                "attributes" : [ {
+                    "name" : "FCURR",
+                    "type" : "String",
+                    "description" : "From currency"
+                }, {
+                    "name" : "FFACT",
+                    "type" : "Double",
+                    "description" : "Ratio (from)"
+                }, {
+                    "name" : "GDATU",
+                    "type" : "Date",
+                    "description" : "Valid From"
+                }, {
+                    "name" : "KURST",
+                    "type" : "String",
+                    "description" : "Exch. Rate Type"
+                }, {
+                    "name" : "MANDT",
+                    "type" : "String",
+                    "description" : "Client"
+                }, {
+                    "name" : "TFACT",
+                    "type" : "Double",
+                    "description" : "Ratio (to)"
+                }, {
+                    "name" : "TOCURR",
+                    "type" : "String",
+                    "description" : "To-currency"
+                }, {
+                    "name" : "UKURS",
+                    "type" : "Double",
+                    "description" : "Exchange rate"
+                }, {
+                    "name" : "UKURS_EFF",
+                    "type" : "Double",
+                    "description" : "Use this field to multiply amount to get target currency amount (rectified data from SAP)"
+                } ]
+            },
+            "cardinality" : "ManyToOne"
+        } ],
+        "attributes" : [ {
+            "name" : "BELNR",
+            "type" : "String",
+            "description" : "Document Number"
+        }, {
+            "name" : "BSCHL",
+            "type" : "String",
+            "description" : "Posting Key"
+        }, {
+            "name" : "BUKRS",
+            "type" : "String",
+            "description" : "Company Code"
+        }, {
+            "name" : "BUZEI",
+            "type" : "String",
+            "description" : "Line item"
+        }, {
+            "name" : "BUZID",
+            "type" : "String",
+            "description" : "Line item ID"
+        }, {
+            "name" : "CC_Responsible",
+            "type" : "String",
+            "description" : "Cost Center Responsible"
+        }, {
+            "name" : "Credit",
+            "type" : "String",
+            "description" : "Credit"
+        }, {
+            "name" : "Debit",
+            "type" : "String",
+            "description" : "Debit"
+        }, {
+            "name" : "DMBTR",
+            "type" : "Double",
+            "description" : "Amount in LC"
+        }, {
+            "name" : "EBELN",
+            "type" : "String",
+            "description" : "Purchasing Doc."
+        }, {
+            "name" : "EBELP",
+            "type" : "String",
+            "description" : "Item"
+        }, {
+            "name" : "Filter",
+            "type" : "String",
+            "description" : "Filter"
+        }, {
+            "name" : "GJAHR",
+            "type" : "String",
+            "description" : "Fiscal Year"
+        }, {
+            "name" : "HKONT",
+            "type" : "String",
+            "description" : "General Ledger"
+        }, {
+            "name" : "InvoiceCostCenter",
+            "type" : "String",
+            "description" : "Invoice Cost Center"
+        }, {
+            "name" : "InvoiceCoArea",
+            "type" : "String",
+            "description" : "Invoice Cost Center Area (Cost Center zone)"
+        }, {
+            "name" : "OpexCapex",
+            "type" : "String",
+            "description" : ""
+        }, {
+            "name" : "PerimeterAccountingEntry",
+            "type" : "String",
+            "description" : ""
+        }, {
+            "name" : "KOART",
+            "type" : "String",
+            "description" : "Account type"
+        }, {
+            "name" : "KOKRS",
+            "type" : "String",
+            "description" : "CO Area"
+        }, {
+            "name" : "KOSTL",
+            "type" : "String",
+            "description" : "Cost Center"
+        }, {
+            "name" : "LIFNR",
+            "type" : "String",
+            "description" : "Vendor"
+        }, {
+            "name" : "MANDT",
+            "type" : "String",
+            "description" : "Client"
+        }, {
+            "name" : "PSWSL",
+            "type" : "String",
+            "description" : "G/L currency"
+        }, {
+            "name" : "SHKZG",
+            "type" : "String",
+            "description" : "Debit/Credit"
+        }, {
+            "name" : "XREF3",
+            "type" : "String",
+            "description" : "Reference key 3"
+        } ]
+    }, "T001", "LFA1", "CSKS", "ZTAXACHAT", "EKKN", "EKPO", "TCURR", "CSKT", "T005T" ]
+}

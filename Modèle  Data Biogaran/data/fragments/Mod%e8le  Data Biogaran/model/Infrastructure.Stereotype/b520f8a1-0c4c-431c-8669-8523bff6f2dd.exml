@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CartographieSAP" version="4">
+  <OBJECT>
+    <ID name="CartographieSAP" mc="Infrastructure.Stereotype" uid="b520f8a1-0c4c-431c-8669-8523bff6f2dd"/>
+    <PID name="LocalProfile" mc="Infrastructure.Profile" uid="2588026a-7eef-475d-8272-424a01b5a12f"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[Cartographie]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.Attribute]]></ATT>
+      <ATT name="Name"><![CDATA[CartographieSAP]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTable">
+        <COMPID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="0728b358-f0ea-4260-9428-dbabaf115ab3"/>
+      </COMP>
+      <LINK relation="Parent">
+        <FOREIGNID name="CartographyManagerCartography" mc="Infrastructure.Stereotype" uid="6a34537e-8d53-4358-8b40-41bdf91c9218"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

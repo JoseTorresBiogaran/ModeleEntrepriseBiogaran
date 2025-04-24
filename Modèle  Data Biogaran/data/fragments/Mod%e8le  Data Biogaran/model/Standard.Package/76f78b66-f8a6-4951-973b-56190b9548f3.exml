@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="finance" version="4">
+  <OBJECT>
+    <ID name="finance" mc="Standard.Package" uid="76f78b66-f8a6-4951-973b-56190b9548f3"/>
+    <PID name="datamodel" mc="Standard.Package" uid="8078ea91-ac9c-4561-b72e-5659e8251d27"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[finance]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="accounting" mc="Standard.Package" uid="bc739053-4a69-44c6-a74b-4b63f6064351"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LinkInformation" version="4">
+  <OBJECT>
+    <ID name="LinkInformation" mc="Infrastructure.Stereotype" uid="1af4a584-3202-409a-8f72-2a6296fd90b3"/>
+    <PID name="DatavaultBuilderGeneratorProfile" mc="Infrastructure.Profile" uid="28198354-9002-4afb-8221-545fc129119b"/>
+    <ATTRIBUTES>
+      <ATT name="Image"><![CDATA[res/icons/logo-acc-seul-16.png]]></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[LinkInformation]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[AssociationEnd]]></ATT>
+      <ATT name="Name"><![CDATA[LinkInformation]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTable">
+        <COMPID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="863216DA-986D-4428-A7E0-9C16D6CB467E"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

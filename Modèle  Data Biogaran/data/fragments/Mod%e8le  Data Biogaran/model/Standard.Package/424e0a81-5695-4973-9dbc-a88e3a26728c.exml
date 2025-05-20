@@ -17,10 +17,33 @@
         <COMPID name="ContratClient" mc="Standard.Class" uid="02e7db49-eb32-4e93-bec9-b21a819478f3"/>
         <COMPID name="Client" mc="Standard.Class" uid="f048ede6-de70-4492-8af8-2f3e0be464bb"/>
         <COMPID name="CommandeClient" mc="Standard.Class" uid="1038ea2f-0d31-4f96-b40b-740273183c33"/>
+        <COMPID name="CommandeClientLigne" mc="Standard.Class" uid="de8d308a-ce94-4b86-8afe-3fbd2b438bbd"/>
         <COMPID name="TypeClient" mc="Standard.Class" uid="b6ebe631-0acb-43d5-b32d-10c916857be2"/>
         <COMPID name="ConditionPaiement" mc="Standard.Class" uid="6218f63c-2d89-48e6-a9d6-c029489c9b95"/>
         <COMPID name="MethodePaiement" mc="Standard.Class" uid="bd16bd4e-31c2-4f3a-9987-e10ae0520601"/>
-        <COMPID name="Officine" mc="Standard.Class" uid="9e6dc0de-ba51-4d6f-b374-5a958d1e70dd"/>
+        <COMPID name="VenteOfficine" mc="Standard.Class" uid="d07c29a2-efb1-4877-bff1-935455fce3ea"/>
+        <COMPID name="MouvementStockOfficine" mc="Standard.Class" uid="8ba24075-ffb6-48f2-b53a-a36af0353880"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="DiagramColorizerColorPackage" mc="Infrastructure.Stereotype" uid="693f54c9-4ddd-9354-9f39-e147e4f5af32"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="693f54c9-4ddd-9354-9f39-e147e4f5af32" mc="Infrastructure.TypedPropertyTable" uid="1acd78b8-8a4d-49f0-a44e-031d0ed7e739"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[693f54c9-4ddd-9354-9f39-e147e4f5af32]]></ATT>
+            <ATT name="Content"><![CDATA[#Fri May 16 15:13:32 CEST 2025
+Color=126,167,202
+FontColor=
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="39af1fbf-f9b5-4fdf-a2af-3e62e65a730c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

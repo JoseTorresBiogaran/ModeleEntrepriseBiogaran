@@ -1,0 +1,36 @@
+{
+    "object_id" : "s_produit_s__f_prototype",
+    "object_name" : "prototype",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "code du produit",
+            "column_id" : "datavault.s_produit_s__f_prototype_p.codem",
+            "column_is_used" : false,
+            "column_name" : "code_m",
+            "complete_data_type" : "STRING"
+        }, {
+            "column_comment" : "Code produit National (source ANSM to check)",
+            "column_id" : "datavault.s_produit_s__f_prototype_p.cip13",
+            "column_is_used" : false,
+            "column_name" : "cip13",
+            "complete_data_type" : "STRING"
+        }, {
+            "column_comment" : "libellé du produit",
+            "column_id" : "datavault.s_produit_s__f_prototype_p.libelle",
+            "column_is_used" : false,
+            "column_name" : "libelle",
+            "complete_data_type" : "STRING"
+        }, {
+            "column_id" : "datavault.s_produit_s__f_prototype_p.codesaisonnalite",
+            "column_is_used" : false,
+            "column_name" : "code_saisonnalite",
+            "complete_data_type" : "STRING"
+        } ],
+        "functional_suffix_id" : "prototype",
+        "hub_id" : "h_produit",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "produit",
+        "system_id" : "dvb_prototype"
+    }
+}

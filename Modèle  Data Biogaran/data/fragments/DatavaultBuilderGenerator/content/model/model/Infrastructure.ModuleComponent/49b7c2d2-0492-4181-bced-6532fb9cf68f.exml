@@ -1,0 +1,161 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="DatavaultBuilderGenerator" version="4">
+  <OBJECT>
+    <ID name="DatavaultBuilderGenerator" mc="Infrastructure.ModuleComponent" uid="49b7c2d2-0492-4181-bced-6532fb9cf68f"/>
+    <ATTRIBUTES>
+      <ATT name="LicenseKey">0</ATT>
+      <ATT name="MajVersion">5</ATT>
+      <ATT name="MinVersion">4</ATT>
+      <ATT name="MinMinVersion"><![CDATA[1]]></ATT>
+      <ATT name="MinBinVersionCompatibility"></ATT>
+      <ATT name="JavaClassName"><![CDATA[fr.acceliance.modelio.datavaultbuildergen.impl.ModelioDVBGenModule]]></ATT>
+      <ATT name="Name"><![CDATA[DatavaultBuilderGenerator]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedPropertyType">
+        <COMPID name="DatavaultCategory" mc="Infrastructure.EnumeratedPropertyType" uid="BBAEF9DA-7629-4642-AC50-B3E717AFB22B"/>
+        <COMPID name="TargetDatabase" mc="Infrastructure.EnumeratedPropertyType" uid="adaf1acf-42f8-461f-b984-2193fe161c7b"/>
+        <COMPID name="GenerationVersion" mc="Infrastructure.EnumeratedPropertyType" uid="29abbed7-b43e-4246-b4a1-6e8933bdd35b"/>
+        <COMPID name="GenerateDimensionSatellite" mc="Infrastructure.EnumeratedPropertyType" uid="61b9d52b-b1f4-4141-837e-44fb110475dc"/>
+      </COMP>
+      <COMP relation="OwnedProfile">
+        <COMPID name="DatavaultBuilderGeneratorProfile" mc="Infrastructure.Profile" uid="28198354-9002-4afb-8221-545fc129119b"/>
+      </COMP>
+      <COMP relation="ModuleParameter">
+        <OBJECT>
+          <ID name="DatavaultBuilderPath" mc="Infrastructure.ModuleParameter" uid="bcda1bd5-7b40-4ffe-b2e5-a37631b2bd3d"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_DIRECTORY</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[DatavaultBuilderPath]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GenerateDVBDomainFromPackageColor" mc="Infrastructure.ModuleParameter" uid="e8705db3-de16-43a5-8d1d-623eb2405a86"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[false]]></ATT>
+            <ATT name="Name"><![CDATA[GenerateDVBDomainFromPackageColor]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GenerateZIPFile" mc="Infrastructure.ModuleParameter" uid="A2153FC0-063E-41BF-81AE-FF66F93A5370"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[false]]></ATT>
+            <ATT name="Name"><![CDATA[GenerateZIPFile]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GenerateColumnNamesSnake" mc="Infrastructure.ModuleParameter" uid="E5EE8CF4-CB19-40DF-B86D-2E5D9062FC14"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_BOOLEAN</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[false]]></ATT>
+            <ATT name="Name"><![CDATA[GenerateColumnNamesSnake]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="TargetDatabase" mc="Infrastructure.ModuleParameter" uid="048EB152-05BA-4DE1-ABFA-85B0510BB4C7"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[PostGre]]></ATT>
+            <ATT name="Name"><![CDATA[TargetDatabase]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <ID name="TargetDatabase" mc="Infrastructure.EnumeratedPropertyType" uid="adaf1acf-42f8-461f-b984-2193fe161c7b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DatavaultBuilderVersion" mc="Infrastructure.ModuleParameter" uid="9B618D43-D2FC-4621-960F-337B0691D678"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_STRING</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[7.0.0]]></ATT>
+            <ATT name="Name"><![CDATA[DatavaultBuilderVersion]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GenerationVersion" mc="Infrastructure.ModuleParameter" uid="0B1BE79D-9409-4BC8-9301-E54922AA4C30"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[v1]]></ATT>
+            <ATT name="Name"><![CDATA[GenerationVersion]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <ID name="GenerationVersion" mc="Infrastructure.EnumeratedPropertyType" uid="29abbed7-b43e-4246-b4a1-6e8933bdd35b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="GenerateDimensionSatellite" mc="Infrastructure.ModuleParameter" uid="7F3A654A-C720-4542-9EC9-63486026B7D3"/>
+          <ATTRIBUTES>
+            <ATT name="GroupName"></ATT>
+            <ATT name="Type">TYPE_PARAM_ENUM</ATT>
+            <ATT name="IsUserRead">true</ATT>
+            <ATT name="IsUserWrite">true</ATT>
+            <ATT name="IsApiRead">true</ATT>
+            <ATT name="IsApiWrite">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[NoGeneration]]></ATT>
+            <ATT name="Name"><![CDATA[GenerateDimensionSatellite]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="EnumType">
+              <ID name="GenerateDimensionSatellite" mc="Infrastructure.EnumeratedPropertyType" uid="61b9d52b-b1f4-4141-837e-44fb110475dc"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

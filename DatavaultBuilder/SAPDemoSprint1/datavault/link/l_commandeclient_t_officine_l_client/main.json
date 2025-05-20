@@ -1,0 +1,12 @@
+{
+    "object_id" : "l_commandeclient_t_officine_l_client",
+    "object_name" : "client",
+    "object_type" : "link",
+    "properties" : {
+        "hub_a_id" : "h_commandeclient",
+        "hub_b_id" : "h_officine",
+        "link_subject_area_name" : "client",
+        "link_suffix_id" : "client",
+        "link_type" : "many_to_one"
+    }
+}

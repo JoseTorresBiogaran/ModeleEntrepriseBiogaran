@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="HubLoadInformation" version="4">
+  <OBJECT>
+    <ID name="HubLoadInformation" mc="Infrastructure.Stereotype" uid="02698FF1-8D0E-4EB0-B1F9-6D4767DC2354"/>
+    <PID name="DatavaultBuilderGeneratorProfile" mc="Infrastructure.Profile" uid="28198354-9002-4afb-8221-545fc129119b"/>
+    <ATTRIBUTES>
+      <ATT name="Image"><![CDATA[res/icons/logo-acc-seul-16.png]]></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[HubLoadInformation]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Class]]></ATT>
+      <ATT name="Name"><![CDATA[HubLoadInformation]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTable">
+        <COMPID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="D4F9E3B0-A31A-447A-9C4A-5FBC4623B33C"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

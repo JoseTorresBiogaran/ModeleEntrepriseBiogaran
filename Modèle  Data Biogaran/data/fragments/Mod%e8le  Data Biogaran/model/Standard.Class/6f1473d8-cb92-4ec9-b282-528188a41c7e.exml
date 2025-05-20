@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="dm_commandes" version="4">
   <OBJECT>
     <ID name="dm_commandes" mc="Standard.Class" uid="6f1473d8-cb92-4ec9-b282-528188a41c7e"/>
-    <PID name="supply" mc="Standard.Package" uid="fba251c3-aae2-486f-a215-ecdf54282fd5"/>
+    <PID name="dipomax datamart" mc="Standard.Package" uid="bf462512-0015-4dbd-b7e2-08b0f2eae6e3"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -214,6 +214,22 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="e810de4e-f237-4e89-9d0b-0895afcc6c9c"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>

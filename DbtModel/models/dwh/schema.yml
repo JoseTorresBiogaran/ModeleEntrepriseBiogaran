@@ -1,0 +1,314 @@
+version: 2
+models:
+  - name: saison
+    description: 'null'
+    columns:
+      - name: libelle
+        description: 'null'
+        data_type: 'STRING'
+      - name: code
+        description: 'null'
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+  - name: famille_produit
+    description: ''
+    columns:
+      - name: libelle
+        description: ''
+        data_type: 'STRING'
+      - name: code
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+  - name: adresse_postale
+    description: 'L''adresse postale en lien avec l''établissement juridique\n\nL''adresse postale d''un établissement juridique peut changer dans le temps, celle-ci a une durée de vie par une date de début et de fin'
+    columns:
+      - name: date_fermeture
+        description: 'La date de démnagement (ou fermeture) de l''établissement vers une nouvelle adresse postale'
+        data_type: 'DATE'
+      - name: adresse_postale_etablissement
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: code_ebx
+            to: ref('Etablissement')
+      - name: cip
+        description: 'Correspond au cip_officine\nObligatoire pour tout etablissement de type officine'
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+      - name: date_ouverture
+        description: 'La date d''installation de l''établissement juridique à cette adresse'
+        data_type: 'DATE'
+  - name: etablissement
+    description: 'L''établissement physique en lien avec la société juridique, exemple une officine\n\nLa clé métier est le code EBX dans le SI Biogaran\n\nLe SIRET est la clé métier publique, cette clé permet la réconciliation de flux de transactions en provenance de partenaires hors du SI Biogaran\n\nL''établissement a une durée de vie, date d''ouverture et de fermeture'
+    columns:
+      - name: date_fermeture
+        description: 'La date de fermeture de l''établissement'
+        data_type: 'DATE'
+      - name: siret
+        description: 'Le SIRET est la clé métier publique, cette clé permet la réconciliation de flux de transactions en provenance de partenaires hors du SI Biogaran'
+        data_type: 'STRING'
+      - name: code_ebx
+        description: 'Correspond au code_officine\n\nLe code offcine est relié au SIREN et stable dans le temps\n\nIl est indéendant du déménagement physique de l''officine (adresse postale)'
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+      - name: type_etablissement
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: code
+            to: ref('TypeEtablissement')
+      - name: etablissement_societe_juridique
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: siren
+            to: ref('SocieteJuridique')
+      - name: date_ouverture
+        description: 'La date d''ouverture de l''établissement'
+        data_type: 'DATE'
+  - name: vente_officine
+    description: ''
+    columns:
+      - name: officine
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: code_ebx
+            to: ref('Etablissement')
+      - name: quantite_vendue
+        description: ''
+        data_type: 'INT64'
+      - name: identifiant
+        description: 'null'
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+      - name: produit
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: codeM
+            to: ref('Produit')
+      - name: date_de_vente
+        description: ''
+        data_type: 'DATE'
+  - name: mouvement_stock_officine
+    description: ''
+    columns:
+      - name: officine
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: code_ebx
+            to: ref('Etablissement')
+      - name: stock_quantite
+        description: ''
+        data_type: 'INT64'
+      - name: stock_date
+        description: ''
+        data_type: 'DATE'
+      - name: identifiant
+        description: 'null'
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+      - name: produit
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: codeM
+            to: ref('Produit')
+  - name: facture_client_ligne
+    description: 'null'
+    columns:
+      - name: numero_ligne
+        description: 'null'
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+      - name: quantite
+        description: 'null'
+        data_type: 'INT64'
+      - name: facture_client
+        description: 'null'
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: numeroFacture
+            to: ref('FactureClient')
+      - name: produit
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: codeM
+            to: ref('Produit')
+  - name: facture_client
+    description: ''
+    columns:
+      - name: officine
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: code_ebx
+            to: ref('Etablissement')
+      - name: date
+        description: 'null'
+        data_type: 'DATE'
+      - name: numero_facture
+        description: 'null'
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+  - name: produit
+    description: 'Catalogue des produits Biogaran\nDispoMax utilise ce référentiel de façon filtrée'
+    columns:
+      - name: code_m
+        description: 'code du produit'
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+      - name: famille_produit
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: code
+            to: ref('FamilleProduit')
+      - name: libelle
+        description: 'libellé du produit'
+        data_type: 'STRING'
+      - name: saisonnalite
+        description: 'null'
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: code
+            to: ref('Saison')
+      - name: cip13
+        description: 'Code produit National (source ANSM to check)'
+        data_type: 'STRING'
+  - name: type_etablissement
+    description: 'Le type d''établissement exemple : officine (code OFF)'
+    columns:
+      - name: libelle
+        description: ''
+        data_type: 'STRING'
+      - name: code
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+  - name: commande_client
+    description: ''
+    columns:
+      - name: officine
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: code_ebx
+            to: ref('Etablissement')
+      - name: date
+        description: ''
+        data_type: 'STRING'
+      - name: numero_commande
+        description: 'null'
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+  - name: commande_client_ligne
+    description: 'null'
+    columns:
+      - name: numero_ligne
+        description: 'null'
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+      - name: quantite
+        description: 'null'
+        data_type: 'INT64'
+      - name: commande_client
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: numeroCommande
+            to: ref('CommandeClient')
+      - name: produit
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: codeM
+            to: ref('Produit')
+  - name: societe_juridique
+    description: 'L''entité juridique en lien avec ses établissements\n\nLa clé métier est le SIREN'
+    columns:
+      - name: tvaintra_communautaire
+        description: ''
+        data_type: 'STRING'
+      - name: raison_sociale
+        description: ''
+        data_type: 'STRING'
+      - name: siren
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null

@@ -14,28 +14,18 @@ dvbgen = Modelio.getInstance().getModuleService().getPeerModule("DatavaultBuilde
 mn = modutils.getMessageNotifier ()
 mn.subscribeListener ( notifyMessage )
 
-def callbackattribute (element, namespace, clsname, attrname, typename, ismandatory, isarray, description, userdata):
-    if ( str(type(element)) != "<type 'org.modelio.metamodel.impl.uml.statik.AttributeImpl'>" ): return True # dont process if association (link)
-    si = dvbgen.getSatelliteInformation ( element )
-    sprint = modutils.getStereotypeInstValueString ( element, cartomgr.getStereotypeCartographieUsage (), "Extranet" ) #get extranet usage
-    if ( si != None and sprint != None ):
-#        si.satelliteName = "Extranet_" + sprint #set satellite name
-#        dvbgen.setSatelliteInformation ( element, si )
-        print "Set satellite name => " + clsname + "." + attrname + " = " "Extranet_" + sprint
-    return True
-
 tr = modutils.createTransaction ( "gendvb" )
-dvbgen.setConfigDatavaultBuilderVersion ( "7.0.0" )
-dvbgen.setConfigTargetDatabase ( dvbgen.convertTargetDatabase ( "PostGre" ) )
+dvbgen.setConfigDatavaultBuilderVersion ( "8.2.1" )
+dvbgen.setConfigTargetDatabase ( dvbgen.convertTargetDatabase ( "BigQuery" ) )
 dvbgen.setConfigGenerationVersion ( dvbgen.convertGenerationVersion ( "Version2" ) )
-dvbgen.setConfigGenerateDimensionSatellite ( dvbgen.convertConfigGenerateDimensionSatellite ( "GenerateAttributeObject" ) )
+dvbgen.setConfigGenerateDimensionSatellite ( dvbgen.convertConfigGenerateDimensionSatellite ( "GenerateObjectAttribute" ) )
 dvbgen.setConfigGenerateColumnNamesSnake ( True )
 dvbgen.setConfigGenerateZIPFile ( True )
 #clean the model from any DVB information
 dvbgen.removeAllUmlArtefactsDVB ()
 #deploy DVB selection information from 
 useCases = modutils.createPairList ()
-useCases.add ( modutils.createPair ( "SAPDemo", "Sprint1") )
+useCases.add ( modutils.createPair ( "DispoMax", "Sprint1") )
 dvbgen.selectUmlArtefactsDVBFromUseCases ( useCases )
 #now deploy sprint names into the stallite names so that the incremental DVB config will happen smoothly
 #so this will support federal enterprise model down to the DVB instance or data mesh (per usage) instances

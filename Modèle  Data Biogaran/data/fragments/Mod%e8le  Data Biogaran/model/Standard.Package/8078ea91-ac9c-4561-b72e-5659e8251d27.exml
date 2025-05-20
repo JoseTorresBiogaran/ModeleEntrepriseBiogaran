@@ -18,6 +18,7 @@
         <COMPID name="supply" mc="Standard.Package" uid="fba251c3-aae2-486f-a215-ecdf54282fd5"/>
         <COMPID name="client" mc="Standard.Package" uid="424e0a81-5695-4973-9dbc-a88e3a26728c"/>
         <COMPID name="finance" mc="Standard.Package" uid="76f78b66-f8a6-4951-973b-56190b9548f3"/>
+        <COMPID name="tiers" mc="Standard.Package" uid="3626c320-3a72-44ed-b8f3-1cf81bd8d435"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="CartographyManagerRootOfTheModel" mc="Infrastructure.Stereotype" uid="6a39137e-8d53-4358-8a20-41bdf91c9218"/>

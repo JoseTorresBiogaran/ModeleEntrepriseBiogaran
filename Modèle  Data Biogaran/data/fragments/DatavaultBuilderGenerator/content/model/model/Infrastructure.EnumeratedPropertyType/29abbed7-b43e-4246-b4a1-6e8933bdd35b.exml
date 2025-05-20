@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="GenerationVersion" version="4">
+  <OBJECT>
+    <ID name="GenerationVersion" mc="Infrastructure.EnumeratedPropertyType" uid="29abbed7-b43e-4246-b4a1-6e8933bdd35b"/>
+    <PID name="DatavaultBuilderGenerator" mc="Infrastructure.ModuleComponent" uid="49b7c2d2-0492-4181-bced-6532fb9cf68f"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">String</ATT>
+      <ATT name="Name"><![CDATA[GenerationVersion]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="Version1" mc="Infrastructure.PropertyEnumerationLitteral" uid="830cd2a9-7ab7-48c0-be1f-25b2d7dd96ab"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Version1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Version2" mc="Infrastructure.PropertyEnumerationLitteral" uid="547d8329-10e4-486a-affd-cc634084c580"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Version2]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

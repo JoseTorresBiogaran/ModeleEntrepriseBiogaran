@@ -14,8 +14,11 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Product">
-        <COMPID name="Dispomax" mc="Standard.ClassDiagram" uid="65c4ff91-ad3a-4441-93a7-e344430298a1"/>
+        <COMPID name="Dispomax Datamart" mc="Standard.ClassDiagram" uid="65c4ff91-ad3a-4441-93a7-e344430298a1"/>
         <COMPID name="SAP" mc="Standard.ClassDiagram" uid="7b9d86f9-c48c-46ee-9bbb-67735815720e"/>
+        <COMPID name="DispoMax Métier" mc="Standard.ClassDiagram" uid="70b8454e-da28-4170-8659-cd366d93c5c6"/>
+        <COMPID name="Entités Juridiques" mc="Standard.ClassDiagram" uid="932345d1-f0aa-4a28-a1ae-85ac63f7484f"/>
+        <COMPID name="Commandes Factures" mc="Standard.ClassDiagram" uid="f88bce96-5ef0-4653-9091-dfe6e7fa0b20"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

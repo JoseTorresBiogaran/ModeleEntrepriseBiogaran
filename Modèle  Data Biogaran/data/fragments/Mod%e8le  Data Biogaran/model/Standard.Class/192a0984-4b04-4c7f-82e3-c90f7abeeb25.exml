@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Fournisseur" version="4">
   <OBJECT>
     <ID name="Fournisseur" mc="Standard.Class" uid="192a0984-4b04-4c7f-82e3-c90f7abeeb25"/>
-    <PID name="supply" mc="Standard.Package" uid="fba251c3-aae2-486f-a215-ecdf54282fd5"/>
+    <PID name="dipomax datamart" mc="Standard.Package" uid="bf462512-0015-4dbd-b7e2-08b0f2eae6e3"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SatelliteLoadInformation" version="4">
+  <OBJECT>
+    <ID name="SatelliteLoadInformation" mc="Infrastructure.Stereotype" uid="9D8286FC-D463-46AB-9132-DCB278624ED9"/>
+    <PID name="DatavaultBuilderGeneratorProfile" mc="Infrastructure.Profile" uid="28198354-9002-4afb-8221-545fc129119b"/>
+    <ATTRIBUTES>
+      <ATT name="Image"><![CDATA[res/icons/logo-acc-seul-16.png]]></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[SatelliteLoadInformation]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Attribute]]></ATT>
+      <ATT name="Name"><![CDATA[SatelliteLoadInformation]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTable">
+        <COMPID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="8859D48D-CBC9-4166-BC5B-C55694AB5EB0"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

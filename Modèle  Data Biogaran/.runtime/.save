@@ -1,2 +1,5 @@
-#Thu Apr 24 09:57:14 CEST 2025
-org.modelio.app.diagram.editor.OpenedDiagrams0='Dispomax' {65c4ff91-ad3a-4441-93a7-e344430298a1} Standard.ClassDiagram
+#Tue May 20 17:06:33 CEST 2025
+org.modelio.app.diagram.editor.OpenedDiagrams0='Dispomax Datamart' {65c4ff91-ad3a-4441-93a7-e344430298a1} Standard.ClassDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams3='Commandes Factures' {f88bce96-5ef0-4653-9091-dfe6e7fa0b20} Standard.ClassDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams1='DispoMax M\u00E9tier' {70b8454e-da28-4170-8659-cd366d93c5c6} Standard.ClassDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams2='Entit\u00E9s Juridiques' {932345d1-f0aa-4a28-a1ae-85ac63f7484f} Standard.ClassDiagram

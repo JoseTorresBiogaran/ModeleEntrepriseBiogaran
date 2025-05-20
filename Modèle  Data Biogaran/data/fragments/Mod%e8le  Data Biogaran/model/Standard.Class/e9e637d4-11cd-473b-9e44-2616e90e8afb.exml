@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="dm_saisonnalites" version="4">
   <OBJECT>
     <ID name="dm_saisonnalites" mc="Standard.Class" uid="e9e637d4-11cd-473b-9e44-2616e90e8afb"/>
-    <PID name="supply" mc="Standard.Package" uid="fba251c3-aae2-486f-a215-ecdf54282fd5"/>
+    <PID name="dipomax datamart" mc="Standard.Package" uid="bf462512-0015-4dbd-b7e2-08b0f2eae6e3"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -174,6 +174,22 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="1b374664-7860-4e58-998e-2c475508122d"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>

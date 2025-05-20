@@ -2,4 +2,10 @@
 <script name="import_model" path="..\..\..\..\macros\import_model.py" icon-path="" show-menu="false" show-toolbar="false">
 <description></description>
 </script>
+<script name="generate-dbt" path="..\..\..\..\macros\generate-dbt.py" icon-path="" show-menu="false" show-toolbar="false">
+<description></description>
+</script>
+<script name="generate-dvb" path="..\..\..\..\macros\generate-dvb.py" icon-path="" show-menu="false" show-toolbar="false">
+<description></description>
+</script>
 </catalog>

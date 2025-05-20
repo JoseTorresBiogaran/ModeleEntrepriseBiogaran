@@ -1,0 +1,8 @@
+{
+    "object_id" : "h_facture",
+    "object_name" : "Facture",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "finance"
+    }
+}

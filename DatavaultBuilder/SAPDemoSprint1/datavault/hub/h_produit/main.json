@@ -1,0 +1,9 @@
+{
+    "object_comment" : "Catalogue des produits Biogaran\\nDispoMax utilise ce référentiel de façon filtrée",
+    "object_id" : "h_produit",
+    "object_name" : "Produit",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "produit"
+    }
+}

@@ -15,6 +15,29 @@
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
         <COMPID name="accounting" mc="Standard.Package" uid="bc739053-4a69-44c6-a74b-4b63f6064351"/>
+        <COMPID name="FactureClient" mc="Standard.Class" uid="06e1456f-15d0-4337-9105-2fd27c464bcf"/>
+        <COMPID name="FactureClientLigne" mc="Standard.Class" uid="3ffc5c7e-cbfe-468a-b420-98e86b2b0ac4"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="DiagramColorizerColorPackage" mc="Infrastructure.Stereotype" uid="693f54c9-4ddd-9354-9f39-e147e4f5af32"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="693f54c9-4ddd-9354-9f39-e147e4f5af32" mc="Infrastructure.TypedPropertyTable" uid="cd02a1f4-bea9-4251-b693-fd18df5005eb"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[693f54c9-4ddd-9354-9f39-e147e4f5af32]]></ATT>
+            <ATT name="Content"><![CDATA[#Fri May 16 15:17:35 CEST 2025
+Color=rgb(39, 91, 76)
+FontColor=rgb(255,255,255)
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="39af1fbf-f9b5-4fdf-a2af-3e62e65a730c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

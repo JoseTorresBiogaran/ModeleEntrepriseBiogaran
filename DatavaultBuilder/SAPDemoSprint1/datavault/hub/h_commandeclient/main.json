@@ -1,0 +1,9 @@
+{
+    "object_comment" : "",
+    "object_id" : "h_commandeclient",
+    "object_name" : "CommandeClient",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "client"
+    }
+}

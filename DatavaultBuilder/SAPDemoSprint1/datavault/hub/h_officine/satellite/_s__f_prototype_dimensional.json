@@ -1,0 +1,31 @@
+{
+    "object_id" : "s_officine_s__f_prototype_dimensional",
+    "object_name" : "prototype_dimensional",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "",
+            "column_id" : "datavault.s_officine_s__f_prototype_dimensional_p.cip_officine",
+            "column_is_used" : false,
+            "column_name" : "officinecip_officine",
+            "complete_data_type" : "STRING"
+        }, {
+            "column_comment" : "",
+            "column_id" : "datavault.s_officine_s__f_prototype_dimensional_p.siret",
+            "column_is_used" : false,
+            "column_name" : "officinesiret",
+            "complete_data_type" : "STRING"
+        }, {
+            "column_comment" : "",
+            "column_id" : "datavault.s_officine_s__f_prototype_dimensional_p.code_ebx",
+            "column_is_used" : false,
+            "column_name" : "officinecode_ebx",
+            "complete_data_type" : "STRING"
+        } ],
+        "functional_suffix_id" : "prototype_dimensional",
+        "hub_id" : "h_officine",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "client",
+        "system_id" : "dvb_prototype"
+    }
+}

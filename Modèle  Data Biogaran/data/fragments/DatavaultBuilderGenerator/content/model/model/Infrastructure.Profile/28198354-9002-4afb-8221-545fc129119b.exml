@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="DatavaultBuilderGeneratorProfile" version="4">
+  <OBJECT>
+    <ID name="DatavaultBuilderGeneratorProfile" mc="Infrastructure.Profile" uid="28198354-9002-4afb-8221-545fc129119b"/>
+    <PID name="DatavaultBuilderGenerator" mc="Infrastructure.ModuleComponent" uid="49b7c2d2-0492-4181-bced-6532fb9cf68f"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[DatavaultBuilderGeneratorProfile]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="SatelliteInformation" mc="Infrastructure.Stereotype" uid="94BC7E7E-18C0-4EE7-B01D-ABE6A9F6515F"/>
+        <COMPID name="SatelliteLoadInformation" mc="Infrastructure.Stereotype" uid="9D8286FC-D463-46AB-9132-DCB278624ED9"/>
+        <COMPID name="HubInformation" mc="Infrastructure.Stereotype" uid="59FA8D72-1D49-4643-B4BD-3F971C313F00"/>
+        <COMPID name="HubLoadInformation" mc="Infrastructure.Stereotype" uid="02698FF1-8D0E-4EB0-B1F9-6D4767DC2354"/>
+        <COMPID name="LinkInformation" mc="Infrastructure.Stereotype" uid="1af4a584-3202-409a-8f72-2a6296fd90b3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

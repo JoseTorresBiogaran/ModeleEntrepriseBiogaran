@@ -1,0 +1,8 @@
+{
+    "object_id" : "h_mouvementstockofficine",
+    "object_name" : "MouvementStockOfficine",
+    "object_type" : "hub",
+    "properties" : {
+        "hub_subject_area_name" : "client"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "object_id" : "l_facture_t_commandeclient_l_commandeclient",
+    "object_name" : "commandeClient",
+    "object_type" : "link",
+    "properties" : {
+        "hub_a_id" : "h_facture",
+        "hub_b_id" : "h_commandeclient",
+        "link_subject_area_name" : "finance",
+        "link_suffix_id" : "commandeclient",
+        "link_type" : "one_to_one"
+    }
+}

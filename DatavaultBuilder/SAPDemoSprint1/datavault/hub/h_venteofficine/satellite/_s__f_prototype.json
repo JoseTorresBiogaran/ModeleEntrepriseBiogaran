@@ -1,0 +1,25 @@
+{
+    "object_id" : "s_venteofficine_s__f_prototype",
+    "object_name" : "prototype",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "",
+            "column_id" : "datavault.s_venteofficine_s__f_prototype_p.date_de_vente",
+            "column_is_used" : false,
+            "column_name" : "date_de_vente",
+            "complete_data_type" : "DATE"
+        }, {
+            "column_comment" : "",
+            "column_id" : "datavault.s_venteofficine_s__f_prototype_p.quantite_vendue",
+            "column_is_used" : false,
+            "column_name" : "quantite_vendue",
+            "complete_data_type" : "INT64"
+        } ],
+        "functional_suffix_id" : "prototype",
+        "hub_id" : "h_venteofficine",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "client",
+        "system_id" : "dvb_prototype"
+    }
+}

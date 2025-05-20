@@ -1,0 +1,12 @@
+{
+    "object_id" : "l_mouvementstockofficine_t_officine_l_officine",
+    "object_name" : "officine",
+    "object_type" : "link",
+    "properties" : {
+        "hub_a_id" : "h_mouvementstockofficine",
+        "hub_b_id" : "h_officine",
+        "link_subject_area_name" : "client",
+        "link_suffix_id" : "officine",
+        "link_type" : "many_to_one"
+    }
+}

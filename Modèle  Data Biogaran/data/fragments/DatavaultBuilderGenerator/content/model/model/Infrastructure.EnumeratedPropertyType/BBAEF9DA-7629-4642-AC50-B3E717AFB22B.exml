@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="DatavaultCategory" version="4">
+  <OBJECT>
+    <ID name="DatavaultCategory" mc="Infrastructure.EnumeratedPropertyType" uid="BBAEF9DA-7629-4642-AC50-B3E717AFB22B"/>
+    <PID name="DatavaultBuilderGenerator" mc="Infrastructure.ModuleComponent" uid="49b7c2d2-0492-4181-bced-6532fb9cf68f"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[DatavaultCategory]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="PersistentStaging" mc="Infrastructure.PropertyEnumerationLitteral" uid="9c0a1b11-ba46-43a7-9e1f-db92ab41fb9e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[PersistentStaging]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="RawVault" mc="Infrastructure.PropertyEnumerationLitteral" uid="35a9ea2e-a8fe-442d-bab3-7c163183f1a4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[RawVault]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="BusinessVault" mc="Infrastructure.PropertyEnumerationLitteral" uid="00470f40-5c66-4ca6-b8fd-f9903a00a719"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[BusinessVault]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="e328b22c-4341-448c-8aa2-2774d6ed8560"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[%DatavaultCategory.description]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

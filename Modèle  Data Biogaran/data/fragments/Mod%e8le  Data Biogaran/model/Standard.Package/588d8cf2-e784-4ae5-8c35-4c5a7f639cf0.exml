@@ -16,6 +16,28 @@
       <COMP relation="OwnedElement">
         <COMPID name="Produit" mc="Standard.Class" uid="41b6855e-8a93-4ba6-abb8-c0c302eb1e97"/>
         <COMPID name="FamilleProduit" mc="Standard.Class" uid="81878563-5bab-4f00-b48b-1be1f6a2bcec"/>
+        <COMPID name="Saison" mc="Standard.Class" uid="63d84026-2e3b-422f-a5e2-a6ddb2b0ae46"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="DiagramColorizerColorPackage" mc="Infrastructure.Stereotype" uid="693f54c9-4ddd-9354-9f39-e147e4f5af32"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="693f54c9-4ddd-9354-9f39-e147e4f5af32" mc="Infrastructure.TypedPropertyTable" uid="4d25d755-3b96-41b3-b866-67a86d66c87c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[693f54c9-4ddd-9354-9f39-e147e4f5af32]]></ATT>
+            <ATT name="Content"><![CDATA[#Fri May 16 15:17:32 CEST 2025
+Color=rgb(176, 101, 113)
+FontColor=rgb(255,255,255)
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="39af1fbf-f9b5-4fdf-a2af-3e62e65a730c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

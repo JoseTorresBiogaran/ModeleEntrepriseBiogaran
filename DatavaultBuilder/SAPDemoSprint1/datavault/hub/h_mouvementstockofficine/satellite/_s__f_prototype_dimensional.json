@@ -1,0 +1,25 @@
+{
+    "object_id" : "s_mouvementstockofficine_s__f_prototype_dimensional",
+    "object_name" : "prototype_dimensional",
+    "object_type" : "satellite",
+    "properties" : {
+        "column_ids" : [ {
+            "column_comment" : "",
+            "column_id" : "datavault.s_mouvementstockofficine_s__f_prototype_dimensional_p.stock_date",
+            "column_is_used" : false,
+            "column_name" : "mouvement_stock_officinestock_date",
+            "complete_data_type" : "DATE"
+        }, {
+            "column_comment" : "",
+            "column_id" : "datavault.s_mouvementstockofficine_s__f_prototype_dimensional_p.stock_quantite",
+            "column_is_used" : false,
+            "column_name" : "mouvement_stock_officinestock_quantite",
+            "complete_data_type" : "INT64"
+        } ],
+        "functional_suffix_id" : "prototype_dimensional",
+        "hub_id" : "h_mouvementstockofficine",
+        "is_cdc_load" : false,
+        "satellite_subject_area_name" : "client",
+        "system_id" : "dvb_prototype"
+    }
+}

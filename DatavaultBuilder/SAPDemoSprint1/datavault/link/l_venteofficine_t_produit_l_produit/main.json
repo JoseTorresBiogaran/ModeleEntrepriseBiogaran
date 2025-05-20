@@ -1,0 +1,12 @@
+{
+    "object_id" : "l_venteofficine_t_produit_l_produit",
+    "object_name" : "produit",
+    "object_type" : "link",
+    "properties" : {
+        "hub_a_id" : "h_venteofficine",
+        "hub_b_id" : "h_produit",
+        "link_subject_area_name" : "client",
+        "link_suffix_id" : "produit",
+        "link_type" : "many_to_one"
+    }
+}

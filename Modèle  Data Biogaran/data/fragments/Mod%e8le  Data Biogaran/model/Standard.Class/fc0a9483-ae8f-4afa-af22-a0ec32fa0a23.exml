@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="AdressePostale" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Officine" version="4">
   <OBJECT>
-    <ID name="AdressePostale" mc="Standard.Class" uid="fc0a9483-ae8f-4afa-af22-a0ec32fa0a23"/>
+    <ID name="Officine" mc="Standard.Class" uid="fc0a9483-ae8f-4afa-af22-a0ec32fa0a23"/>
     <PID name="tiers" mc="Standard.Package" uid="3626c320-3a72-44ed-b8f3-1cf81bd8d435"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[AdressePostale]]></ATT>
+      <ATT name="Name"><![CDATA[Officine]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -47,8 +47,9 @@
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="666f0846-cb44-453b-b99c-8ab1921cfdaa"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Fri May 16 16:56:43 CEST 2025
+                  <ATT name="Content"><![CDATA[#Mon Jun 09 15:03:23 CEST 2025
 DispoMax=Sprint1
+TablesTiers=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
@@ -78,8 +79,36 @@ IsBusinessKey=true
               <OBJECT>
                 <ID name="" mc="Infrastructure.Note" uid="15a6a15c-9636-4e42-a267-98119ae996d2"/>
                 <ATTRIBUTES>
-                  <ATT name="Content"><![CDATA[Correspond au cip_officine
-Obligatoire pour tout etablissement de type officine]]></ATT>
+                  <ATT name="Content"><![CDATA[1) Qu'est-ce que le code CIP officinal ?
+Le code CIP officinal (ou code établissement CIP) n’est pas le même que le code CIP des médicaments.
+Ici, on parle bien du code d’identification de l’officine en tant que structure, utilisé notamment pour :
+*les échanges avec l’assurance maladie (télétransmission SESAM-Vitale),
+*les logiciels de gestion officinale (LGO),
+*la facturation des prestations de santé,
+*la traçabilité des flux de facturation.
+
+Il s'agit d'un identifiant informatique indispensable au fonctionnement quotidien de l’officine.
+
+2) Qui attribue le code CIP officinal ?
+Le **code CIP officinal est attribué par le CFDP (ex-CERP/CIP) devenu aujourd’hui GIE SESAM-Vitale / Cegedim Santé via l’organisme CIP Santé.
+
+En pratique :
+
+Dès que l’officine a son SIRET et est déclarée auprès de l'assurance maladie (CPAM) et de l'Ordre des pharmaciens, le pharmacien (ou son prestataire informatique) fait une demande d’attribution de code CIP officinal.
+
+CIP Santé génère ce code qui permet ensuite de paramétrer :
+*le logiciel de gestion de l’officine (LGO),
+*la télétransmission des feuilles de soins électroniques,
+*la sécurisation des échanges avec l’assurance maladie.
+
+3) Sur quelle base est attribué ce code ?
+Numéro SIRET de l’officine.
+
+Conventionnement auprès de la CPAM (obligatoire pour la télétransmission).
+
+Informations administratives validées (Ordre, ARS…).
+
+C’est donc bien après l’obtention du SIRET que le code CIP officinal est généré.]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -123,8 +152,9 @@ Obligatoire pour tout etablissement de type officine]]></ATT>
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="b1c728fe-8c20-403f-992a-067d696fd34f"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Fri May 16 16:56:43 CEST 2025
+                  <ATT name="Content"><![CDATA[#Mon Jun 09 15:03:23 CEST 2025
 DispoMax=Sprint1
+TablesTiers=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
@@ -139,7 +169,7 @@ DispoMax=Sprint1
               <OBJECT>
                 <ID name="" mc="Infrastructure.Note" uid="5903ed99-22d0-44cc-93c7-b0f4a0898da3"/>
                 <ATTRIBUTES>
-                  <ATT name="Content"><![CDATA[La date d'installation de l'établissement juridique à cette adresse]]></ATT>
+                  <ATT name="Content"><![CDATA[La date d'obtention du code CIP auprès des autorités médicales]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -183,8 +213,9 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="0d9dafa2-cb40-4a4b-b18c-c4298427c223"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Fri May 16 16:56:43 CEST 2025
+                  <ATT name="Content"><![CDATA[#Mon Jun 09 15:03:23 CEST 2025
 DispoMax=Sprint1
+TablesTiers=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
@@ -199,7 +230,8 @@ DispoMax=Sprint1
               <OBJECT>
                 <ID name="" mc="Infrastructure.Note" uid="bbf9bf84-0f60-4584-ac8e-b587df2e1ef4"/>
                 <ATTRIBUTES>
-                  <ATT name="Content"><![CDATA[La date de démnagement (ou fermeture) de l'établissement vers une nouvelle adresse postale]]></ATT>
+                  <ATT name="Content"><![CDATA[La date de fermeture est enregistrée auprès des autorités médicales
+Le numéro de CIP unique devient invalide pour effectuer toute opération]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -214,13 +246,159 @@ DispoMax=Sprint1
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="titulaire" mc="Standard.AssociationEnd" uid="1cd781ab-4c35-47f3-b3ff-450af0a7aa80"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[titulaire]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Etablissement" mc="Standard.Class" uid="9552d2cd-6170-4efb-a059-98dda3e63855"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="Standard.AssociationEnd" uid="edb772db-93c1-4a03-ba25-3a8dffb0dea3"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">AccesNone</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="titulaire" mc="Standard.AssociationEnd" uid="1cd781ab-4c35-47f3-b3ff-450af0a7aa80"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Association" uid="1b25d333-6477-40f0-b474-e3dfe95251de"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="" mc="Standard.Association" uid="1b25d333-6477-40f0-b474-e3dfe95251de"/>
+            </COMP>
+            <LINK relation="Extension">
+              <ID name="CartographyUsage" mc="Infrastructure.Stereotype" uid="99a3f230-f965-4146-9f58-e5787d265697"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="675146b4-eb4d-4484-bd31-ecdd0e6526d8"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
+                  <ATT name="Content"><![CDATA[#Mon Jun 09 15:03:23 CEST 2025
+DispoMax=Sprint1
+TablesTiers=Sprint1
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="d55d99da-9c92-4f7f-9470-8507179eec78"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="dd4ad74c-9dfb-4694-8824-cbed2026ced2"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Le titulaire/exploitant de l'officine est légalement un SIRET
+L'établissement est titulaire/exploitant d'une officine uniquement s'il est du type Officine]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="Gouvernance" mc="Infrastructure.Stereotype" uid="a36c9813-fd93-4c85-b783-ef81c3f55ae6"/>
+        <ID name="FluxSource" mc="Infrastructure.Stereotype" uid="51945465-50ca-4517-8e96-18a5bfc356d7"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="a36c9813-fd93-4c85-b783-ef81c3f55ae6" mc="Infrastructure.TypedPropertyTable" uid="3f7846ae-abf0-40ed-b2c3-c4a34dc198d2"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[a36c9813-fd93-4c85-b783-ef81c3f55ae6]]></ATT>
+            <ATT name="Content"><![CDATA[#Mon Jun 09 10:15:05 CEST 2025
+ApplicationMaitre=EBX
+Contact=Aline Marais
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="4e1d80a3-79d0-4262-80bf-7e2459766c40"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="51945465-50ca-4517-8e96-18a5bfc356d7" mc="Infrastructure.TypedPropertyTable" uid="8f1e3dcd-1a0b-4066-af98-ae890bb9758a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[51945465-50ca-4517-8e96-18a5bfc356d7]]></ATT>
+            <ATT name="Content"><![CDATA[#Mon Jun 09 10:15:05 CEST 2025
+Type=FluxManuel
+Commentaire=Le référentiel des officines apparait dans les données GERS qui ne sont pas exploitées. Les autorités sanitaires ne fournissent pas un référentiel permettant  un flux digitalisé. De ce fait, les informations d'officines sont remontées par les dépositaires ainsi que par les commerciaux de terrain. Biogarn connait les officines qui sont ses clients directs. Ces remontées de tarrain concernent les autres officines. A noter que la remontée concerne les officines et le SIRET associé. Cela compose 2 flux manuels. Les données sont saisies manuellement par l'opérateur Biogaran. La qualité des données dépend de la capture manuelle par les agents de terrain.
+Source=Flux dépositaires et Commerciaux sur le terrain
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="4d440e7f-6a47-4129-a1e0-8765723d4ec9"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="3333ddcc-b13e-44d1-aeb5-d073c7ea480b"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[L'adresse postale en lien avec l'établissement juridique
+            <ATT name="Content"><![CDATA[Le local physique ou point de vente caractérise l'officine
 
-L'adresse postale d'un établissement juridique peut changer dans le temps, celle-ci a une durée de vie par une date de début et de fin]]></ATT>
+L'officine existe au regard des autorités médicales par son numéro unique CIP
+
+Une officine est stable dans le temps sur son local physique
+
+L'officine peut changer de titulaire/exploitant dans le temps
+
+L'officine est est l'unique point d'entrée pour réaliser des opération]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>

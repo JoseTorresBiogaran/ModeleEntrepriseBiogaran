@@ -23,6 +23,8 @@
         <COMPID name="MethodePaiement" mc="Standard.Class" uid="bd16bd4e-31c2-4f3a-9987-e10ae0520601"/>
         <COMPID name="VenteOfficine" mc="Standard.Class" uid="d07c29a2-efb1-4877-bff1-935455fce3ea"/>
         <COMPID name="MouvementStockOfficine" mc="Standard.Class" uid="8ba24075-ffb6-48f2-b53a-a36af0353880"/>
+        <COMPID name="AbonnementDispoMax" mc="Standard.Class" uid="5afbc646-9d80-4d7b-98be-08a1ae4629b7"/>
+        <COMPID name="Rupture" mc="Standard.Class" uid="f160e682-ac19-4217-a7d8-715794e36e3b"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="DiagramColorizerColorPackage" mc="Infrastructure.Stereotype" uid="693f54c9-4ddd-9354-9f39-e147e4f5af32"/>

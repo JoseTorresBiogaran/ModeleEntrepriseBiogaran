@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TypeFlux" version="4">
+  <OBJECT>
+    <ID name="TypeFlux" mc="Infrastructure.EnumeratedPropertyType" uid="77f59f92-94b6-456e-8177-6c912d462332"/>
+    <PID name="LocalModule" mc="Infrastructure.ModuleComponent" uid="d0f4ad77-ccb3-494d-b831-fdbc79c47a0d"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[TypeFlux]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="FluxDigitalisé" mc="Infrastructure.PropertyEnumerationLitteral" uid="d5606c33-658f-4fd1-85eb-a2368a4054de"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[FluxDigitalisé]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="FluxManuel" mc="Infrastructure.PropertyEnumerationLitteral" uid="097f230c-a000-4fbf-adc8-3b7682e324e3"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[FluxManuel]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="FluxMultiplesMixtes" mc="Infrastructure.PropertyEnumerationLitteral" uid="a3118a46-41de-4e75-82f4-f35e00e7e171"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[FluxMultiplesMixtes]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -62,7 +62,7 @@ IsBusinessKey=true
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="a888bc8a-4611-47bd-8460-9c4b564234f7"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -106,7 +106,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="4fe8c2ca-a89b-4ea2-9f10-cf563664ad08"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -139,7 +139,7 @@ DispoMax=Sprint1
       </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="officine" mc="Standard.AssociationEnd" uid="a63a2d37-9119-4130-a310-bf8fdc745e38"/>
+          <ID name="client" mc="Standard.AssociationEnd" uid="a63a2d37-9119-4130-a310-bf8fdc745e38"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -152,7 +152,7 @@ DispoMax=Sprint1
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[officine]]></ATT>
+            <ATT name="Name"><![CDATA[client]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -179,7 +179,7 @@ DispoMax=Sprint1
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="officine" mc="Standard.AssociationEnd" uid="a63a2d37-9119-4130-a310-bf8fdc745e38"/>
+                    <COMPID name="client" mc="Standard.AssociationEnd" uid="a63a2d37-9119-4130-a310-bf8fdc745e38"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
@@ -205,7 +205,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="8b74c41d-90c4-4704-8a64-0de6cbeb79e5"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -229,6 +229,87 @@ DispoMax=Sprint1
                 <DEPENDENCIES>
                   <LINK relation="Model">
                     <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="officineLivraison" mc="Standard.AssociationEnd" uid="6ad56302-c734-419c-9703-fdf97a45f85a"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[officineLivraison]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Officine" mc="Standard.Class" uid="fc0a9483-ae8f-4afa-af22-a0ec32fa0a23"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="Standard.AssociationEnd" uid="ab83d545-9d14-4769-b09f-2ca05075b902"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">AccesNone</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="officineLivraison" mc="Standard.AssociationEnd" uid="6ad56302-c734-419c-9703-fdf97a45f85a"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Association" uid="ca133735-c76e-47f8-a14e-065b95d8304e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="" mc="Standard.Association" uid="ca133735-c76e-47f8-a14e-065b95d8304e"/>
+            </COMP>
+            <LINK relation="Extension">
+              <ID name="CartographyUsage" mc="Infrastructure.Stereotype" uid="99a3f230-f965-4146-9f58-e5787d265697"/>
+            </LINK>
+            <COMP relation="Properties">
+              <OBJECT>
+                <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="ba2603e5-4beb-4872-a156-3cee2a5875ad"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
+DispoMax=Sprint1
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="d55d99da-9c92-4f7f-9470-8507179eec78"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>

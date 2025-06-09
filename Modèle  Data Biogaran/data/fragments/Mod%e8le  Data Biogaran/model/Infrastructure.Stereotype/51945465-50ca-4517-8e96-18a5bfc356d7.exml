@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="FluxSource" version="4">
+  <OBJECT>
+    <ID name="FluxSource" mc="Infrastructure.Stereotype" uid="51945465-50ca-4517-8e96-18a5bfc356d7"/>
+    <PID name="LocalProfile" mc="Infrastructure.Profile" uid="2588026a-7eef-475d-8272-424a01b5a12f"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[FluxSource]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.Class]]></ATT>
+      <ATT name="Name"><![CDATA[FluxSource]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTable">
+        <COMPID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="4d440e7f-6a47-4129-a1e0-8765723d4ec9"/>
+      </COMP>
+      <LINK relation="Parent">
+        <FOREIGNID name="CartographyManagerCartography" mc="Infrastructure.Stereotype" uid="6a34537e-8d53-4358-8b40-41bdf91c9218"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

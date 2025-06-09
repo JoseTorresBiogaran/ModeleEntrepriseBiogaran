@@ -4,6 +4,7 @@
 with etablissement as
 (
     select
+   cast(null as STRING) as titulaire_officine, /* Relation to Officine.cip */
    cast(null as DATE) as date_fermeture,
    cast(null as STRING) as siret,
    cast(null as STRING) as code_ebx, /* Business key */

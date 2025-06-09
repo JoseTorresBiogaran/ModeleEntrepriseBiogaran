@@ -17,7 +17,7 @@
         <COMPID name="SocieteJuridique" mc="Standard.Class" uid="a2be1330-b6f1-4437-8105-0a090fa3cbc6"/>
         <COMPID name="Etablissement" mc="Standard.Class" uid="9552d2cd-6170-4efb-a059-98dda3e63855"/>
         <COMPID name="TypeEtablissement" mc="Standard.Class" uid="4214cb2d-7a1c-449b-a6a9-584dfc2d3854"/>
-        <COMPID name="AdressePostale" mc="Standard.Class" uid="fc0a9483-ae8f-4afa-af22-a0ec32fa0a23"/>
+        <COMPID name="Officine" mc="Standard.Class" uid="fc0a9483-ae8f-4afa-af22-a0ec32fa0a23"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="DiagramColorizerColorPackage" mc="Infrastructure.Stereotype" uid="693f54c9-4ddd-9354-9f39-e147e4f5af32"/>

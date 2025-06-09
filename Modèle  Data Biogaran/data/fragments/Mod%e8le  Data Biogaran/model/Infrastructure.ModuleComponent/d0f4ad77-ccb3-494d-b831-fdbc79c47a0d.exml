@@ -13,6 +13,9 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="DefinedPropertyType">
+        <COMPID name="TypeFlux" mc="Infrastructure.EnumeratedPropertyType" uid="77f59f92-94b6-456e-8177-6c912d462332"/>
+      </COMP>
       <COMP relation="OwnedProfile">
         <COMPID name="LocalProfile" mc="Infrastructure.Profile" uid="2588026a-7eef-475d-8272-424a01b5a12f"/>
       </COMP>

@@ -62,7 +62,7 @@ IsBusinessKey=true
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="a2971394-852d-42aa-9b57-df85f4427bce"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -122,7 +122,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="ccf05f53-2592-4065-87e4-9b58aac119cb"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>

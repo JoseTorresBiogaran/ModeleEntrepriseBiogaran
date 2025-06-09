@@ -62,7 +62,7 @@ IsBusinessKey=true
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="a8e6e0a7-943b-4d67-a36b-558062fd3a1c"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -106,7 +106,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="22581213-9257-4b11-9cb0-050f40d08461"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -123,7 +123,7 @@ DispoMax=Sprint1
       </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="officine" mc="Standard.AssociationEnd" uid="50f28ca1-7179-4ebc-8b17-fadfaae58183"/>
+          <ID name="client" mc="Standard.AssociationEnd" uid="50f28ca1-7179-4ebc-8b17-fadfaae58183"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -136,7 +136,7 @@ DispoMax=Sprint1
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[officine]]></ATT>
+            <ATT name="Name"><![CDATA[client]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -163,7 +163,7 @@ DispoMax=Sprint1
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="officine" mc="Standard.AssociationEnd" uid="50f28ca1-7179-4ebc-8b17-fadfaae58183"/>
+                    <COMPID name="client" mc="Standard.AssociationEnd" uid="50f28ca1-7179-4ebc-8b17-fadfaae58183"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
@@ -189,7 +189,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="21ad0c78-e8d8-475a-b3d9-ba7e6a004b4c"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>

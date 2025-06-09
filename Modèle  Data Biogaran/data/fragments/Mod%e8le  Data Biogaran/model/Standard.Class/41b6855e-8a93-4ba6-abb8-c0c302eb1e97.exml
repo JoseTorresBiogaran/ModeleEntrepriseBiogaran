@@ -64,7 +64,7 @@ Colonne=cad
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="657450f9-7b66-4624-8c92-276b794e00e9"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -139,7 +139,7 @@ IsBusinessKey=true
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="b1ac8e49-d68f-4e63-90cc-52531f09d958"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -155,7 +155,118 @@ DispoMax=Sprint1
               <OBJECT>
                 <ID name="" mc="Infrastructure.Note" uid="64d834c3-6d19-4aa6-b581-67aa014a90f3"/>
                 <ATTRIBUTES>
-                  <ATT name="Content"><![CDATA[Code produit National (source ANSM to check)]]></ATT>
+                  <ATT name="Content"><![CDATA[Le CIP13 (Code Identifiant de Présentation à 13 chiffres) est un identifiant très utilisé en France pour les médicaments. Son cycle de vie suit les différentes étapes du cycle de vie du médicament lui-même et de ses présentations. Voici un résumé assez détaillé de son cycle de vie :
+
+1️⃣ Attribution initiale du CIP13
+Lorsqu’un nouveau médicament est autorisé sur le marché (AMM délivrée par l’ANSM ou l’EMA), chaque présentation (boîte, dosage, conditionnement) reçoit un identifiant unique appelé CIP13.
+
+Le code CIP13 est généré par l'Agence nationale de sécurité du médicament (ANSM) via le code UCD et intègre le code CIP7 de base (la racine produit) + 5 chiffres supplémentaires de présentation + 1 clé de contrôle.
+
+Cette étape intervient avant la mise sur le marché effectif.
+
+2️⃣ Commercialisation
+Le CIP13 est utilisé pour l’identification en :
+
+distribution (grossistes, officines, établissements de santé)
+
+remboursement par l’assurance maladie
+
+gestion des stocks
+
+traçabilité dans la chaîne pharmaceutique
+
+Il est associé à des données administratives et tarifaires (base de remboursement, prix public, taux de remboursement, générique ou non…).
+
+3️⃣ Modifications possibles
+Au cours de la vie commerciale du médicament, plusieurs changements peuvent survenir :
+
+Changement de tarif
+
+Changement de conditionnement
+
+Changement d’exploitant
+
+Changement de statut (princeps → générique par exemple)
+
+Retrait ou suspension temporaire du marché
+
+Le CIP13 reste généralement inchangé sauf si la présentation elle-même change substantiellement.
+
+4️⃣ Arrêt de commercialisation
+Si la spécialité n'est plus commercialisée, l’exploitant en informe l’ANSM et la CNAM.
+
+Le CIP13 est alors mis en statut « non commercialisé ».
+
+Il reste toutefois présent dans les bases historiques pour la traçabilité des dispensations passées, les remboursements, et les dossiers patients.
+
+5️⃣ Suppression définitive
+Après une période prolongée (variable selon les règles de l’assurance maladie, de l’ANSM et de la réglementation fiscale), le CIP13 peut être désactivé des bases actives.
+
+Toutefois, pour la traçabilité à long terme (pharmacovigilance, dossiers médicaux, études de cohortes), le code reste généralement archivé.]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="cip7" mc="Standard.Attribute" uid="a5cc34e6-df96-46b5-8452-7d41fe27fe54"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[cip7]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="codeucd" mc="Standard.Attribute" uid="93eb60cf-64b7-4592-827d-e758157a9f32"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[codeucd]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="d90eda3b-4272-46ba-a018-4f1fd7dace3f"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Les fichiers des médicaments codés en unités communes de dispensation (UCD) délivrés en établissements de santé sont disponibles sur la base des médicaments à code UCD. Ils sont mis à jour chaque vendredi, en fonction des publications au Journal officiel.]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -216,7 +327,7 @@ Colonne=label
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="d68ad8ca-a33f-4d53-8526-6f8c20218d64"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -315,7 +426,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="3319ea1b-137c-4902-baad-7c4024c2c000"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -412,7 +523,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="b263b1f2-6715-4ba9-aa48-0e4209ec7951"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>

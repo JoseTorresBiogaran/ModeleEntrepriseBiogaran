@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PropertyTableDefinition" version="4">
+  <OBJECT>
+    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="4d440e7f-6a47-4129-a1e0-8765723d4ec9"/>
+    <PID name="FluxSource" mc="Infrastructure.Stereotype" uid="51945465-50ca-4517-8e96-18a5bfc356d7"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[PropertyTableDefinition]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Owned">
+        <OBJECT>
+          <ID name="Source" mc="Infrastructure.PropertyDefinition" uid="d5707835-b953-4e6a-b831-4ae1c86478e9"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Source]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Text" mc="Infrastructure.PropertyType" uid="01a40888-0000-002a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Commentaire" mc="Infrastructure.PropertyDefinition" uid="ca108bc1-221b-49ff-a22f-5e54156c27d2"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Commentaire]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Text" mc="Infrastructure.PropertyType" uid="01a40888-0000-002a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Type" mc="Infrastructure.PropertyDefinition" uid="0d0f4e27-a44f-4fec-9e3b-3d1f8b9a3e08"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Type]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="TypeFlux" mc="Infrastructure.EnumeratedPropertyType" uid="77f59f92-94b6-456e-8177-6c912d462332"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

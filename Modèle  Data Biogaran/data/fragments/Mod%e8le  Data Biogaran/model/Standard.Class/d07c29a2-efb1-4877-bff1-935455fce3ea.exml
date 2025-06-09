@@ -62,7 +62,7 @@ IsBusinessKey=true
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="1a9a44f1-704d-4acc-8c85-2e515d2a4eff"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -106,7 +106,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="d6a307b5-8dea-4059-8d5d-f4b6a616bb2d"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -166,7 +166,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="dc9e87d4-f269-4378-bbc4-e0a587f1f7fb"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -217,7 +217,7 @@ DispoMax=Sprint1
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Etablissement" mc="Standard.Class" uid="9552d2cd-6170-4efb-a059-98dda3e63855"/>
+              <ID name="Officine" mc="Standard.Class" uid="fc0a9483-ae8f-4afa-af22-a0ec32fa0a23"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
@@ -265,7 +265,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="ca17a307-f207-45b2-b265-3ab644f674ce"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -362,7 +362,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="4342a813-2f1a-494e-8794-c6e44ed84bfa"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>

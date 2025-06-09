@@ -1,56 +1,59 @@
 version: 2
 models:
-  - name: saison
-    description: 'null'
-    columns:
-      - name: libelle
-        description: 'null'
-        data_type: 'STRING'
-      - name: code
-        description: 'null'
-        data_type: 'STRING'
-        constraints:
-          - type: primary_key
-          - type: not_null
-  - name: famille_produit
-    description: ''
-    columns:
-      - name: libelle
-        description: ''
-        data_type: 'STRING'
-      - name: code
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: primary_key
-          - type: not_null
-  - name: adresse_postale
-    description: 'L''adresse postale en lien avec l''établissement juridique\n\nL''adresse postale d''un établissement juridique peut changer dans le temps, celle-ci a une durée de vie par une date de début et de fin'
+  - name: officine
+    description: 'Le local physique ou point de vente caractérise l''officine\n\nL''officine existe au regard des autorités médicales par son numéro unique CIP\n\nUne officine est stable dans le temps sur son local physique\n\nL''officine peut changer de titulaire/exploitant dans le temps\n\nL''officine est est l''unique point d''entrée pour réaliser des opération'
     columns:
       - name: date_fermeture
-        description: 'La date de démnagement (ou fermeture) de l''établissement vers une nouvelle adresse postale'
+        description: 'La date de fermeture est enregistrée auprès des autorités médicales\nLe numéro de CIP unique devient invalide pour effectuer toute opération'
         data_type: 'DATE'
-      - name: adresse_postale_etablissement
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: code_ebx
-            to: ref('Etablissement')
       - name: cip
-        description: 'Correspond au cip_officine\nObligatoire pour tout etablissement de type officine'
+        description: '1) Qu''est-ce que le code CIP officinal ?\nLe code CIP officinal (ou code établissement CIP) n’est pas le même que le code CIP des médicaments.\nIci, on parle bien du code d’identification de l’officine en tant que structure, utilisé notamment pour :\n*les échanges avec l’assurance maladie (télétransmission SESAM-Vitale),\n*les logiciels de gestion officinale (LGO),\n*la facturation des prestations de santé,\n*la traçabilité des flux de facturation.\n\nIl s''agit d''un identifiant informatique indispensable au fonctionnement quotidien de l’officine.\n\n2) Qui attribue le code CIP officinal ?\nLe **code CIP officinal est attribué par le CFDP (ex-CERP/CIP) devenu aujourd’hui GIE SESAM-Vitale / Cegedim Santé via l’organisme CIP Santé.\n\nEn pratique :\n\nDès que l’officine a son SIRET et est déclarée auprès de l''assurance maladie (CPAM) et de l''Ordre des pharmaciens, le pharmacien (ou son prestataire informatique) fait une demande d’attribution de code CIP officinal.\n\nCIP Santé génère ce code qui permet ensuite de paramétrer :\n*le logiciel de gestion de l’officine (LGO),\n*la télétransmission des feuilles de soins électroniques,\n*la sécurisation des échanges avec l’assurance maladie.\n\n3) Sur quelle base est attribué ce code ?\nNuméro SIRET de l’officine.\n\nConventionnement auprès de la CPAM (obligatoire pour la télétransmission).\n\nInformations administratives validées (Ordre, ARS…).\n\nC’est donc bien après l’obtention du SIRET que le code CIP officinal est généré.'
         data_type: 'STRING'
         constraints:
           - type: primary_key
           - type: not_null
       - name: date_ouverture
-        description: 'La date d''installation de l''établissement juridique à cette adresse'
+        description: 'La date d''obtention du code CIP auprès des autorités médicales'
         data_type: 'DATE'
-  - name: etablissement
-    description: 'L''établissement physique en lien avec la société juridique, exemple une officine\n\nLa clé métier est le code EBX dans le SI Biogaran\n\nLe SIRET est la clé métier publique, cette clé permet la réconciliation de flux de transactions en provenance de partenaires hors du SI Biogaran\n\nL''établissement a une durée de vie, date d''ouverture et de fermeture'
+  - name: societe_juridique
+    description: 'L''entité juridique en lien avec ses établissements\n\nLa clé métier est le SIREN'
     columns:
+      - name: tvaintra_communautaire
+        description: ''
+        data_type: 'STRING'
+      - name: raison_sociale
+        description: ''
+        data_type: 'STRING'
+      - name: siren
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+  - name: type_etablissement
+    description: 'Le type d''établissement exemple : officine (code OFF)'
+    columns:
+      - name: libelle
+        description: ''
+        data_type: 'STRING'
+      - name: code
+        description: ''
+        data_type: 'STRING'
+        constraints:
+          - type: primary_key
+          - type: not_null
+  - name: etablissement
+    description: 'L''établissement physique en lien avec la société juridique, exemple une officine\n\nLa clé métier est le code EBX dans le SI Biogaran\n\nLe SIRET est la clé métier publique, cette clé permet la réconciliation de flux de transactions en provenance de partenaires hors du SI Biogaran\n\nL''établissement a une durée de vie, date d''ouverture et de fermeture\n\nLE NRID vient de NEO et s''applique à toutes les tables (dans la couche DATAHUB)'
+    columns:
+      - name: titulaire_officine
+        description: 'Le titulaire/exploitant de l''officine est légalement un SIRET\nL''établissement est titulaire/exploitant d''une officine uniquement s''il est du type Officine'
+        data_type: 'STRING'
+        constraints:
+          - type: foreign_key
+        tests:
+          - relationships:
+            field: cip
+            to: ref('Officine')
       - name: date_fermeture
         description: 'La date de fermeture de l''établissement'
         data_type: 'DATE'
@@ -84,231 +87,3 @@ models:
       - name: date_ouverture
         description: 'La date d''ouverture de l''établissement'
         data_type: 'DATE'
-  - name: vente_officine
-    description: ''
-    columns:
-      - name: officine
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: code_ebx
-            to: ref('Etablissement')
-      - name: quantite_vendue
-        description: ''
-        data_type: 'INT64'
-      - name: identifiant
-        description: 'null'
-        data_type: 'STRING'
-        constraints:
-          - type: primary_key
-          - type: not_null
-      - name: produit
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: codeM
-            to: ref('Produit')
-      - name: date_de_vente
-        description: ''
-        data_type: 'DATE'
-  - name: mouvement_stock_officine
-    description: ''
-    columns:
-      - name: officine
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: code_ebx
-            to: ref('Etablissement')
-      - name: stock_quantite
-        description: ''
-        data_type: 'INT64'
-      - name: stock_date
-        description: ''
-        data_type: 'DATE'
-      - name: identifiant
-        description: 'null'
-        data_type: 'STRING'
-        constraints:
-          - type: primary_key
-          - type: not_null
-      - name: produit
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: codeM
-            to: ref('Produit')
-  - name: facture_client_ligne
-    description: 'null'
-    columns:
-      - name: numero_ligne
-        description: 'null'
-        data_type: 'STRING'
-        constraints:
-          - type: primary_key
-          - type: not_null
-      - name: quantite
-        description: 'null'
-        data_type: 'INT64'
-      - name: facture_client
-        description: 'null'
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: numeroFacture
-            to: ref('FactureClient')
-      - name: produit
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: codeM
-            to: ref('Produit')
-  - name: facture_client
-    description: ''
-    columns:
-      - name: officine
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: code_ebx
-            to: ref('Etablissement')
-      - name: date
-        description: 'null'
-        data_type: 'DATE'
-      - name: numero_facture
-        description: 'null'
-        data_type: 'STRING'
-        constraints:
-          - type: primary_key
-          - type: not_null
-  - name: produit
-    description: 'Catalogue des produits Biogaran\nDispoMax utilise ce référentiel de façon filtrée'
-    columns:
-      - name: code_m
-        description: 'code du produit'
-        data_type: 'STRING'
-        constraints:
-          - type: primary_key
-          - type: not_null
-      - name: famille_produit
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: code
-            to: ref('FamilleProduit')
-      - name: libelle
-        description: 'libellé du produit'
-        data_type: 'STRING'
-      - name: saisonnalite
-        description: 'null'
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: code
-            to: ref('Saison')
-      - name: cip13
-        description: 'Code produit National (source ANSM to check)'
-        data_type: 'STRING'
-  - name: type_etablissement
-    description: 'Le type d''établissement exemple : officine (code OFF)'
-    columns:
-      - name: libelle
-        description: ''
-        data_type: 'STRING'
-      - name: code
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: primary_key
-          - type: not_null
-  - name: commande_client
-    description: ''
-    columns:
-      - name: officine
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: code_ebx
-            to: ref('Etablissement')
-      - name: date
-        description: ''
-        data_type: 'STRING'
-      - name: numero_commande
-        description: 'null'
-        data_type: 'STRING'
-        constraints:
-          - type: primary_key
-          - type: not_null
-  - name: commande_client_ligne
-    description: 'null'
-    columns:
-      - name: numero_ligne
-        description: 'null'
-        data_type: 'STRING'
-        constraints:
-          - type: primary_key
-          - type: not_null
-      - name: quantite
-        description: 'null'
-        data_type: 'INT64'
-      - name: commande_client
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: numeroCommande
-            to: ref('CommandeClient')
-      - name: produit
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: foreign_key
-        tests:
-          - relationships:
-            field: codeM
-            to: ref('Produit')
-  - name: societe_juridique
-    description: 'L''entité juridique en lien avec ses établissements\n\nLa clé métier est le SIREN'
-    columns:
-      - name: tvaintra_communautaire
-        description: ''
-        data_type: 'STRING'
-      - name: raison_sociale
-        description: ''
-        data_type: 'STRING'
-      - name: siren
-        description: ''
-        data_type: 'STRING'
-        constraints:
-          - type: primary_key
-          - type: not_null

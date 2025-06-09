@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CartographieDataHub" version="4">
+  <OBJECT>
+    <ID name="CartographieDataHub" mc="Infrastructure.Stereotype" uid="397cdebc-550f-47ba-baf5-ad98d4c519c1"/>
+    <PID name="LocalProfile" mc="Infrastructure.Profile" uid="2588026a-7eef-475d-8272-424a01b5a12f"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[CartographieDataHub]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.StructuralFeature]]></ATT>
+      <ATT name="Name"><![CDATA[CartographieDataHub]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTable">
+        <COMPID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="688030cc-4691-483e-a13b-06a3513de67d"/>
+      </COMP>
+      <LINK relation="Parent">
+        <FOREIGNID name="CartographyManagerCartography" mc="Infrastructure.Stereotype" uid="6a34537e-8d53-4358-8b40-41bdf91c9218"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

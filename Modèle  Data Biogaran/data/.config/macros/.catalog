@@ -8,4 +8,7 @@
 <script name="generate-dvb" path="..\..\..\..\macros\generate-dvb.py" icon-path="" show-menu="false" show-toolbar="false">
 <description></description>
 </script>
+<script name="export_diagram_carto" path="..\..\..\..\macros\export_diagram_carto.py" icon-path="" show-menu="false" show-toolbar="false">
+<description></description>
+</script>
 </catalog>

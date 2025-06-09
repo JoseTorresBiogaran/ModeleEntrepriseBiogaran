@@ -40,6 +40,7 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="DbtBusinessKey" mc="Infrastructure.Stereotype" uid="0A349AB5-69F5-4499-B303-95289890E146"/>
+              <ID name="CartographyUsage" mc="Infrastructure.Stereotype" uid="99a3f230-f965-4146-9f58-e5787d265697"/>
             </LINK>
             <COMP relation="Properties">
               <OBJECT>
@@ -54,6 +55,21 @@ IsBusinessKey=true
                 <DEPENDENCIES>
                   <LINK relation="Type">
                     <FOREIGNID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="E42202F3-525F-479F-9F88-AE1849570801"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="f4afbd10-2791-456c-bb90-f9e08dbcdadd"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
+DispoMax=Sprint1
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="d55d99da-9c92-4f7f-9470-8507179eec78"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
@@ -90,7 +106,7 @@ IsBusinessKey=true
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="af6534e2-2583-4f98-8bf5-6a6035772c17"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -173,7 +189,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="2d239383-9f12-4217-be04-27469a389a75"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -270,7 +286,7 @@ DispoMax=Sprint1
                 <ID name="99a3f230-f965-4146-9f58-e5787d265697" mc="Infrastructure.TypedPropertyTable" uid="7efd824f-5978-4793-b740-8c8dc73148a1"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[99a3f230-f965-4146-9f58-e5787d265697]]></ATT>
-                  <ATT name="Content"><![CDATA[#Tue May 20 14:51:13 CEST 2025
+                  <ATT name="Content"><![CDATA[#Tue Jun 03 17:05:39 CEST 2025
 DispoMax=Sprint1
 ]]></ATT>
                   <ATT name="status">1970354901745664</ATT>

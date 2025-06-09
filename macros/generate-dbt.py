@@ -21,7 +21,7 @@ dbtgen.setConfigGenerateColumnNamesSnake ( True )
 dbtgen.removeAllUmlArtefactsDBT ()
 #deploy DVB selection information from 
 useCases = modutils.createPairList ()
-useCases.add ( modutils.createPair ( "DispoMax", "Sprint1") )
+useCases.add ( modutils.createPair ( "TablesTiers", "Sprint1") )
 dbtgen.selectUmlArtefactsDBTFromUseCases ( useCases )
 #dbtgen.selectAllUmlArtefactsDBT ()
 #now deploy sprint names into the stallite names so that the incremental DVB config will happen smoothly

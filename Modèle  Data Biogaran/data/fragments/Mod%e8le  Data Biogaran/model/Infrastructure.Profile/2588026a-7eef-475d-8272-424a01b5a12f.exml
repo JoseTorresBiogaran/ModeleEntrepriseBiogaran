@@ -13,9 +13,11 @@
         <COMPID name="CartographyUsage" mc="Infrastructure.Stereotype" uid="99a3f230-f965-4146-9f58-e5787d265697"/>
         <COMPID name="LanguageSAPTechnical" mc="Infrastructure.Stereotype" uid="5529325f-303f-4cf8-8efe-f9ff049e0d00"/>
         <COMPID name="LanguageSAPFunctional" mc="Infrastructure.Stereotype" uid="95756714-690a-4b58-831b-976f5eb298e6"/>
-        <COMPID name="CartographieDataHub" mc="Infrastructure.Stereotype" uid="397cdebc-550f-47ba-baf5-ad98d4c519c1"/>
         <COMPID name="FluxSource" mc="Infrastructure.Stereotype" uid="51945465-50ca-4517-8e96-18a5bfc356d7"/>
         <COMPID name="Gouvernance" mc="Infrastructure.Stereotype" uid="a36c9813-fd93-4c85-b783-ef81c3f55ae6"/>
+        <COMPID name="CartographieDataHubGrossiste" mc="Infrastructure.Stereotype" uid="397cdebc-550f-47ba-baf5-ad98d4c519c1"/>
+        <COMPID name="CartographieDataHubDepositaire" mc="Infrastructure.Stereotype" uid="499fe680-a615-44f7-aaff-5f5c5a588b4b"/>
+        <COMPID name="CartographieDataHubClient" mc="Infrastructure.Stereotype" uid="1d27853d-4bf2-44ed-ad42-883d0e0052c8"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

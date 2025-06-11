@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CartographieDataHubGrossiste" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CartographieDataHubDepositaire" version="4">
   <OBJECT>
-    <ID name="CartographieDataHubGrossiste" mc="Infrastructure.Stereotype" uid="397cdebc-550f-47ba-baf5-ad98d4c519c1"/>
+    <ID name="CartographieDataHubDepositaire" mc="Infrastructure.Stereotype" uid="499fe680-a615-44f7-aaff-5f5c5a588b4b"/>
     <PID name="LocalProfile" mc="Infrastructure.Profile" uid="2588026a-7eef-475d-8272-424a01b5a12f"/>
     <ATTRIBUTES>
       <ATT name="Image"></ATT>
@@ -10,21 +10,21 @@
       <ATT name="IsAbstract">false</ATT>
       <ATT name="LabelKey"><![CDATA[CartographieDataHub]]></ATT>
       <ATT name="BaseClassName"><![CDATA[Standard.StructuralFeature]]></ATT>
-      <ATT name="Name"><![CDATA[CartographieDataHubGrossiste]]></ATT>
+      <ATT name="Name"><![CDATA[CartographieDataHubDepositaire]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="DefinedTable">
-        <COMPID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="688030cc-4691-483e-a13b-06a3513de67d"/>
+        <COMPID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="70651f66-27cf-432e-98f5-6135450d0e95"/>
       </COMP>
       <LINK relation="Parent">
         <FOREIGNID name="CartographyManagerCartography" mc="Infrastructure.Stereotype" uid="6a34537e-8d53-4358-8b40-41bdf91c9218"/>
       </LINK>
       <COMP relation="Descriptor">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="3cd8214e-e06b-4f01-9902-4765734a5d0d"/>
+          <ID name="" mc="Infrastructure.Note" uid="43da6385-6b0a-4934-b8df-5e834829ed59"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[https://console.cloud.google.com/bigquery?invt=Abzvxg&project=datahub-std-prod-90cd&inv=1&ws=!1m4!1m3!3m2!1sdatahub-std-prod-90cd!2sentrepot_grossiste]]></ATT>
+            <ATT name="Content"><![CDATA[https://console.cloud.google.com/bigquery?invt=Abzvxg&project=datahub-std-prod-90cd&inv=1&ws=!1m4!1m3!3m2!1sdatahub-std-prod-90cd!2sentrepot_depositaire]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>

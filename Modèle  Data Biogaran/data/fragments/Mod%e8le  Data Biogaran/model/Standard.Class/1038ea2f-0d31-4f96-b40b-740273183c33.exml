@@ -317,6 +317,27 @@ DispoMax=Sprint1
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
+      <LINK relation="Extension">
+        <ID name="Gouvernance" mc="Infrastructure.Stereotype" uid="a36c9813-fd93-4c85-b783-ef81c3f55ae6"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="a36c9813-fd93-4c85-b783-ef81c3f55ae6" mc="Infrastructure.TypedPropertyTable" uid="bec1d54b-596d-4cdf-b4e8-c8fc1d4b0151"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[a36c9813-fd93-4c85-b783-ef81c3f55ae6]]></ATT>
+            <ATT name="Content"><![CDATA[#Tue Jun 10 08:58:36 CEST 2025
+ApplicationMaitre=NEO
+Contact=Stéphane Ugolini
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="4e1d80a3-79d0-4262-80bf-7e2459766c40"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="f60003cb-0792-4c5a-a63d-c3ef8812cbf0"/>

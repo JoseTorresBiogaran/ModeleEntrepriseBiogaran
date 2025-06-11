@@ -220,6 +220,27 @@ DispoMax=Sprint1
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
+      <LINK relation="Extension">
+        <ID name="Gouvernance" mc="Infrastructure.Stereotype" uid="a36c9813-fd93-4c85-b783-ef81c3f55ae6"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="a36c9813-fd93-4c85-b783-ef81c3f55ae6" mc="Infrastructure.TypedPropertyTable" uid="b3eacf41-420c-4df5-91d7-e2a1f72af50e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[a36c9813-fd93-4c85-b783-ef81c3f55ae6]]></ATT>
+            <ATT name="Content"><![CDATA[#Tue Jun 10 08:57:41 CEST 2025
+ApplicationMaitre=SAP
+Contact=Yacine Nabti
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="PropertyTableDefinition" mc="Infrastructure.PropertyTableDefinition" uid="4e1d80a3-79d0-4262-80bf-7e2459766c40"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="2e27a450-848b-4c1e-ba1f-a2306e6d7b8a"/>
